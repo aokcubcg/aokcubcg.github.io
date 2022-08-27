@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40645917-2"></script>
+	<script src="/js/common.js"></script>
+
+	<meta charset="utf-8">
+	<title>aokcub::Web::BSchLib</title>
+	<style><!--
+		body {
+		    margin: 0; padding: 0;
+			color: #444;
+			background-color: #fcfcfc;
+		    text-shadow: 1px 1px 1px #bbb;
+		    line-height: 1.3em;
+		    font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+		}
+
+		.font_small {
+		    font-size: 11pt;
+		}
+
+		.font_midium {
+		    font-size: 14pt;
+		}
+
+		.font_large {
+		    font-size: 17pt;
+		}
+
+		.small {
+		    font-size: 0.8em;
+		}
+
+		.large {
+		    font-size: 1.3em;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+		    margin: 10px 0 10px 0;
+		    padding: 0 0 7px 5px;
+		    font-weight: normal;
+		}
+
+		h1 {
+		    font-size: 1.5em;
+		    border-bottom: 2px solid #44A5CB;
+		}
+
+		h1:before, h2:before, h3:before, h4:before, h5:before, h6:before {
+		    content: "■";
+		    display: inline-block;
+		    margin-right: 6px;
+		}
+
+		h2 {
+		    font-size: 1.3em;
+		}
+
+		h3 {
+		    font-size: 1.2em;
+		}
+
+		p, code, form {
+		    margin: 0 0 8px 10px;
+		}
+
+		pre {
+		    margin: 0 10px 10px 10px;
+		    white-space: pre;
+		    background-color: #f8f8f8;
+		    border: 1px solid #99cfe5;
+		}
+
+		img {
+		    max-width: 100%;
+		    margin: 0; padding: 0;
+		    border: none;
+		}
+
+		address {
+			font-style: normal;
+		}
+
+		.clearfix:after {
+		    content: ".";
+		    display: block;
+		    height: 0;
+		    clear: both;
+		    visibility: hidden;
+		}
+
+		a:link, a:visited {
+			color: #007FB1;
+		}
+
+		a:hover {
+			color: #44A5CB;
+		}
+
+		table {
+			font-size: 0.9em;
+		    margin: 0 1em 1.5em 1.0em;
+		    border-spacing: 0;
+		    border-right: 1px solid #99CFE5;
+			border-bottom: 1px solid #99CFE5;
+		    border-radius: 5px;
+		}
+
+		caption {
+			text-align: cewnter;
+			font-size: 0.9em;
+		    font-weight: bold;
+		}
+
+		th {
+			font-weight: normal;
+		}
+
+		th, td {
+			text-align: left;
+		}
+
+		th.col {
+			background-color: #CAE7F2;
+		    background-image: -webkit-linear-gradient(#fff 0%, #fff 2%, #e5f3f9 3%, #CAE7F2 100%);
+		    background-image: -moz-linear-gradient(#fff 0%, #fff 2%, #e5f3f9 3%, #CAE7F2 100%);
+		    background-image: -ms-linear-gradient(#fff 0%, #fff 2%, #e5f3f9 3%, #CAE7F2 100%);
+		    background-image: -o-linear-gradient(#fff 0%, #fff 2%, #e5f3f9 3%, #CAE7F2 100%);
+		}
+
+		th, td {
+			border-left: 1px solid #99CFE5;
+			border-top: 1px solid #99CFE5;
+		}
+
+		th.col {
+		    padding: 3px 9px 2px 7px;
+		}
+
+		td {
+			padding: 3px 9px 2px 9px;
+		}
+
+		td[colspan] {
+		    text-align: center;
+		}
+
+		th.pivot {
+			background-color: #fcfcfc;
+		    padding: 3px 9px 2px 21px;
+		}
+
+		th.row > div {
+			margin: 1px 0 0 1px;
+			padding-right: 9px;
+			overflow: hidden;
+		}
+
+		th.row > div:before {
+			display: block; 
+			content: "";
+			width: 20px;
+			height: 20px;
+			float: left;
+			-webkit-transform-origin: 50% 50%;
+			-webkit-transform: translate(-10px, -15px) rotate(45deg);
+			-moz-transform-origin: 50% 50%;
+			-moz-transform: translate(-10px, -15px) rotate(45deg);
+			-ms-transform-origin: 50% 50%;
+			-ms-transform: translate(-10px, -15px) rotate(45deg);
+			-o-transform-origin: 50% 50%;
+			-o-transform: translate(-10px, -15px) rotate(45deg);
+			transform-origin: 50% 50%;
+			transform: translate(-10px, -15px) rotate(45deg);
+		}
+
+		tr:nth-child(even) > th.row > div:before {
+			background-color: #95DFD6;
+		}
+
+		tr:nth-child(odd) > th.row > div:before {
+			background-color: #F3C0AB;
+		}
+
+		tr:nth-child(odd) {
+			background-color: #CAE7F2;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f8f8f8;
+		}
+
+		th.row:after {    
+			content: ".";
+		    display: block;
+		    height: 0;
+		    clear: both;
+		    visibility: hidden;
+		}
+
+		tr:first-child th:first-child {
+		    border-radius: 5px 0 0 0 / 5px 0 0 0;
+		}
+
+		tr:first-child th:last-child {
+		    border-radius: 0 5px 0 0 / 0 5px 0 0;
+		}
+
+		tr:last-child th:first-child {
+		    border-radius: 0 0 0 5px / 0 0 0 5px;
+		}
+
+		tr:last-child td:last-child {
+		    border-radius: 0 0 5px 0 / 0 0 5px 0;
+		}
+
+		input {
+		    font-size: 0.9em;
+		    font-family: inherit;
+		    font-weight: normal;
+		}
+
+		input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="number"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="time"], input[type="color"], textarea {
+		    color: #666;
+		    background-color: #fafafa;
+		    border: 1px solid #888888;
+		    border-radius: 0.5em;
+		    outline: none;
+		    margin: 5px 10px;
+		    padding: 4px 10px;
+		}
+
+		input[type="text"].error, input[type="password"].error, input[type="email"].error, input[type="url"].error, input[type="search"].error, input[type="tel"].error, input[type="number"].error, input[type="date"].error, input[type="datetime"].error, input[type="datetime-local"].error, input[type="month"].error, input[type="week"].error, input[type="time"].error, input[type="color"].error, textarea.error {
+		    border: 1px solid #E6855E;
+		    box-shadow: 0 0 8px #E6855E;
+		    color: #DA5019;
+		}
+
+		input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="color"]:focus, textarea:focus {
+		    border: 1px solid #99CFE5;
+		    box-shadow: 0 0 8px #99CFE5;
+		    color: #666;
+		}
+
+		input[type="button"], input[type="submit"] {
+		    color: #444;
+		    margin: 5px 0 5px 10px;
+		    padding: 4px 15px;
+		    border-radius: 0.5em;
+		    background-color: #CAE7F2;
+		    background-image: -webkit-linear-gradient(#fff 0%, #fff 2%, #e5f3f9 3%, #CAE7F2 100%);
+		    background-image: -moz-linear-gradient(#fff 0%, #fff 2%, #e5f3f9 3%, #CAE7F2 100%);
+		    background-image: -ms-linear-gradient(#fff 0%, #fff 2%, #e5f3f9 3%, #CAE7F2 100%);
+		    background-image: -o-linear-gradient(#fff 0%, #fff 2%, #e5f3f9 3%, #CAE7F2 100%);
+		    border: 1px solid #99CFE5;
+		}
+
+		input[type="button"].gray, input[type="submit"].gray {
+		    background-color: #f0f0f0;
+		    background-image: -webkit-linear-gradient(#fff 0%, #fff 2%, #f0f0f0 3%, #e0e0e0 100%);
+		    border: 1px solid #d0d0d0;
+		}
+
+		input[type="button"].critical, input[type="submit"].critical {
+		    background-color: #F3C0AB;
+		    background-image: -webkit-linear-gradient(#fff 0%, #fff 2%, #F9DFD5 3%, #F3C0AB 100%);
+		    background-image: -moz-linear-gradient(#fff 0%, #fff 2%, #F9DFD5 3%, #F3C0AB 100%);
+		    background-image: -ms-linear-gradient(#fff 0%, #fff 2%, #F9DFD5 3%, #F3C0AB 100%);
+		    background-image: -o-linear-gradient(#fff 0%, #fff 2%, #F9DFD5 3%, #F3C0AB 100%);
+		    border: 1px solid #E6855E;
+		}
+
+		input[type="button"]:hover, input[type="submit"]:hover {
+		    box-shadow: 0 0 8px #99CFE5;
+		}
+
+		input[type="button"].gray:hover, input[type="submit"].gray:hover {
+		    box-shadow: 0 0 8px #d0d0d0;
+		}
+
+		input[type="button"].critical:hover, input[type="submit"].critical:hover {
+		    box-shadow: 0 0 8px #E6855E;
+		}
+
+		input[type="button"]:active, input[type="submit"]:active {
+		    position: relative;
+		    left: 1px;
+		    top: 1px;
+		}
+
+		input[type="checkbox"], input[type="radio"] {
+		    margin: 5px 7px 5px 10px;
+		    padding: 0;
+		}
+	--></style>
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#237afc",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "transparent",
+          "text": "#ffffff",
+          "border": "#fff"
+        }
+      },
+	  "position": "top",
+	  "static": true,
+      "content": {
+        "message": "本サイトでは，アクセス傾向の分析や利便性向上を目的として，Cookieを利用しています。本サイトを利用することで，Cookieの使用に同意するものとします。詳しくはプライバシーポリシーをご覧ください。",
+        "dismiss": "OK",
+        "link": "詳細",
+        "href": "https://aokcub.net/privacy.html"
+      }
+    })});
+    </script>
+</head>
+
+<body>
+<h1>
+BSch3V用部品ライブラリ
+</h1>
+<p>
+水魚堂さんのBSch用のライブラリ集です．<br>
+アップロード前に入念にチェックを行っていますが，<br>
+万が一ミスを発見された場合はお手数ですがご連絡ください．<br>
+ここで配布しているライブラリを使ったことに起因する損害には一切責任をとれませんので，同意の上ご使用ください．<br>
+また，<span style="color:red">ここに置いてあるライブラリに関する質問を水魚堂さんにすることは絶対に避けてください．</span>
+</p>
+
+<table width="900px">
+	<tr>
+	<th scope="col" class="col name">ライブラリ</th>
+	<th scope="col" class="col parts">収録部品</th>
+	<th scope="col" class="col update">最終更新日</th>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/AE-BME280.zip">
+		        AE-BME280
+		    </a><br>
+		（秋月の<a href="http://akizukidenshi.com/catalog/g/gK-09421/">	
+BME280使用　温湿度・気圧センサモジュールキット</a>）<br>
+			
+        </div>
+	</th>
+	<td>
+		AE-BME280 (I2C)<br>
+		AE-BME280 (SPI3W)<br>
+		AE-BME280 (SPI4W)
+	</td>
+	<td>2019-03-24</td>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/VS10xx.zip">
+		        VS10xx
+		    </a>
+        </div>
+	</th>
+    <td>
+		VS1011e(28pinSOIC)<br>
+		VS1011e(48pinLQFP)<br>
+		VS1053b(48pinLQFP)<br>
+		VS1063A(48pinLQFP)<br>
+	</td>
+	<td>2013-04-27</td>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/PIC.zip">
+		        PIC(ピン名省略版)
+		    </a>
+        </div>
+	</th>
+    <td>
+		PIC12F1822(8pinDIP)<br>
+		PIC16F1823(14pinDIP)<br>
+		PIC16F1827(18pinDIP)<br>
+		PIC16F1933(28pinDIP)<br>
+		PIC16F1936(28pinDIP)<br>
+		PIC16F1937(40pinDIP)<br>
+		PIC16F1938(28pinDIP)<br>
+		PIC16F1939(40pinDIP)<br>
+		PIC16F627A(18pinDIP)<br>
+		PIC16F628A(18pinDIP)<br>
+		PIC16F648A(18pinDIP)<br>
+		PIC16F87(18pinDIP)<br>
+		PIC16F88(18pinDIP)<br>
+		PIC18F1220(18pinDIP)<br>
+		PIC18F1320(18pinDIP)<br>
+		PIC18F2455(28pinDIP)<br>
+		PIC18F2550(28pinDIP)<br>
+		PIC18F4455(40pinDIP)<br>
+		PIC18F4550(40pinDIP)<br>
+		PIC24FJ64GA002(28pinDIP)<br>
+		PIC32MX110F016B(28pinDIP)<br>
+		PIC32MX120F032B(28pinDIP)<br>
+		PIC32MX130F064B(28pinDIP)<br>
+		PIC32MX150F128B(28pinDIP)<br>
+		PIC32MX210F016B(28pinDIP)<br>
+		PIC32MX220F032B(28pinDIP)<br>
+		PIC32MX230F064B(28pinDIP)<br>
+		PIC32MX250F128B(28pinDIP)<br>
+		dsPIC33FJ256GP506(64pinQFP)<br>
+		dsPIC33FJ256GP710(100pinQFP)<br>
+		dsPIC33FJ32GP202(28pinDIP)<br>
+	</td>
+	<td>2012-06-05</td>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/PIC_full.zip">
+		        PIC(ピン名省略無し版)
+		    </a>
+        </div>
+	</th>
+    <td>
+		PIC10F220(6pinSOT23)<br>
+		PIC10F220(8pinDIP)<br>
+		PIC10F222(6pinSOT23)<br>
+		PIC10F222(8pinDIP)<br>
+		PIC12F1822(8pinDIP)<br>
+		PIC16F627A(18pinDIP)<br>
+		PIC16F628A(18pinDIP)<br>
+		PIC16F648A(18pinDIP)<br>
+		PIC16F818(18pinDIP)<br>
+		PIC16F819(18pinDIP)<br>
+		PIC16F87(18pinDIP)<br>
+		PIC16F88(18pinDIP)<br>
+		PIC16F882(28pinDIP)<br>
+		PIC16F883(28pinDIP)<br>
+		PIC16F884(40pinDIP)<br>
+		PIC16F886(28pinDIP)<br>
+		PIC16F887(40pinDIP)<br>
+		PIC18F1220(18pinDIP)<br>
+		PIC18F1320(18pinDIP)<br>
+		PIC18F13K50(20pinDIP)<br>
+		PIC18F14K50(20pinDIP)<br>
+		PIC18F2220(28pinDIP)<br>
+		PIC18F2320(28pinDIP)<br>
+		PIC18F2455(28pinDIP)<br>
+		PIC18F24J50(28pinDIP)<br>
+		PIC18F2550(28pinDIP)<br>
+		PIC18F25J50(28pinDIP)<br>
+		PIC18F26J50(28pinDIP)<br>
+		PIC18F4455(40pinDIP)<br>
+		PIC18F4550(40pinDIP)<br>
+		PIC24F64GA002(28pinDIP)<br>
+		PIC24HJ128GP202(28pinDIP)<br>
+		PIC24HJ128GP502(28pinDIP)<br>
+		PIC24HJ32GP204(44pinTQFP)<br>
+		PIC24HJ32GP302(28pinDIP)<br>
+		PIC24HJ64GP202(28pinDIP)<br>
+		PIC24HJ64GP502(28pinDIP)<br>
+		PIC32MX110F016B(28pinDIP)<br>
+		PIC32MX120F032B(28pinDIP)<br>
+		PIC32MX130F064B(28pinDIP)<br>
+		PIC32MX150F128B(28pinDIP)<br>
+		PIC32MX210F016B(28pinDIP)<br>
+		PIC32MX220F032B(28pinDIP)<br>
+		PIC32MX230F064B(28pinDIP)<br>
+		PIC32MX250F128B(28pinDIP)<br>
+		dsPIC33FJ32GP202(28pinDIP)<br>
+	</td>
+	<td>2012-06-05</td>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/ATP3011F4.zip">
+		        ATP3011F4
+		    </a>
+        </div>
+	</th>
+    <td>
+		ATP3011F4-PU<br>
+	</td>
+	<td>2012-03-26</td>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/FXMA108_MODULE.zip">
+		        秋月の双方向ロジックレベル変換モジュール
+		    </a>
+        </div>
+	</th>
+    <td>
+		FXMA108_MODULE<br>
+	</td>
+	<td>2011-01-29</td>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/AVR.zip">
+		        AVR
+		    </a>
+        </div>
+	</th>
+    <td>
+		ATmega88P[48P/168P/328P](28pinDIP)<br>
+		ATtiny2313<br>
+	</td>
+	<td>2010-06-04</td>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/LCD.zip">
+		        LCD
+		    </a>
+        </div>
+	</th>
+    <td>
+		LQ043T3DX02<br>
+		SC1602B<br>
+		SC2004C<br>
+		SG12232<br>
+		ZY-FGD1442701V1<br>
+	</td>
+	<td>2010-04-25</td>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/RTC.zip">
+		        RTC
+		    </a>
+        </div>
+	</th>
+    <td>
+		RTC-8564NB<br>
+	</td>
+	<td>2010-04-25</td>
+	</tr>
+	<tr>
+	<th scope="row" class="row">
+        <div>
+		    <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/bschlib/DAC.zip">
+		        DAC
+		    </a>
+        </div>
+	</th>
+    <td>
+		MCP4921<br>
+		MCP4922<br>
+	</td>
+	<td>2010-04-25</td>
+	</tr>
+</table>
+
+<p>
+	<a href="../privacy.html">aokcub::Webプライバシーポリシー</a><br>
+	<a href="http://aokcub.net">aokcub::Web</a>
+</p>
+
+</body>
+</html>
