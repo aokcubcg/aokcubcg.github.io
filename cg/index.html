@@ -52,31 +52,47 @@
 
   <div class="wrapper">
     <header>
-      <img src="img/header.jpg" alt="aokcub::Web:CG">
+      <img src="img/header.jpg" alt="">
+      <div class="site-header__overlay">
+        <h1 class="site-header__title">aokcub::Web::CG</h1>
+        <p class="site-header__subtitle">景観CG / 全天球スカイドームテクスチャ</p>
+      </div>
     </header>
 
     <main class="content">
-      <h1 class="visually-hidden">aokcub::Web:CG</h1>
+
+      <nav class="page-nav" aria-label="ページ内ナビゲーション">
+        <ul>
+          <li><a href="#introduction">自己紹介</a></li>
+          <li><a href="#works">制作物</a></li>
+          <li><a href="#software">使用ソフトウェア</a></li>
+        </ul>
+      </nav>
 
       <section id="introduction">
         <h2 class="section-title">自己紹介</h2>
 
         <div id="semantic-grid" class="s-grid">
           <figure>
-            <img src="./img/icon.jpg" alt="profile icon" width="120" height="120"><br>
+            <img src="./img/icon.jpg" alt="profile icon" width="120" height="120">
           </figure>
 
-          <div>
+          <div class="profile">
+            <span class="profile__name">aokcub</span>
+            <span class="profile__role">景観CG / スカイドームテクスチャ制作</span>
             <p>
-              aokcubと申します。<br>
-              <a href="https://planetside.co.uk/">Terragen 4</a>（外部サイト）というソフトウェアを使って風景のCGを制作しています。朝焼け空，夕焼け空を作るのが好きです。<br>
-              <a href="https://embersmelody.com/">Embers Melody</a>（外部サイト）準所属（2022/10〜）
+              <a href="https://planetside.co.uk/">Terragen 4</a>（外部サイト）というソフトウェアを使って風景のCGを制作しています。朝焼け空，夕焼け空を作るのが好きです。
             </p>
 
-            <p>
-              連絡先<br>
-              e-mail: aokcub3055 AT gmail.com<br>
-              Twitter: <a href="https://twitter.com/aokcub_cg">aokcub_cg</a>
+            <dl class="contact-list">
+              <dt>Twitter</dt>
+              <dd><a href="https://twitter.com/aokcub_cg">@aokcub_cg</a></dd>
+              <dt>e-mail</dt>
+              <dd>aokcub3055 AT gmail.com</dd>
+            </dl>
+
+            <p class="profile__affiliation">
+              <a href="https://embersmelody.com/">Embers Melody</a> 準所属 (2022/10〜)
             </p>
           </div>
         </div>
@@ -86,222 +102,313 @@
         <h2 class="section-title">制作物</h2>
 
         <h3>全天球スカイドームテクスチャ ++skies; (Incremented Skies)</h3>
-        <p>
-          <a href="./incskies/"><img class="incskies-banner" src="./img/incskies.jpg" alt="incskies"></a>
-          最大32k16kサイズ，HDRフォーマットありの全天球パノラマ素材を制作しています。これまでに映像・ゲーム等幅広く利用いただいています。ぜひご利用ください。<br>
-          <a href="./incskies/">++skies;</a>
-        </p>
+        <article class="featured-product">
+          <figure class="featured-product__media">
+            <a href="./incskies/"><img src="./img/incskies.jpg" alt="incskies banner"></a>
+          </figure>
+          <div class="featured-product__body">
+            <p class="featured-product__lede">
+              最大32k16kサイズ，HDRフォーマット対応の全天球パノラマ素材。これまでに映像・ゲーム等幅広く利用いただいています。
+            </p>
+            <a class="pill pill--solid featured-product__cta" href="./incskies/">++skies; を詳しく見る →</a>
+          </div>
+        </article>
 
         <h3>景観CG（依頼制作物・共同制作物）</h3>
 
         <div class="m-grid">
           <div>
-            2024-04-22<br>
-            <img src="./img/works/far-beyond-the-horizon-2024.jpg" alt="Far Beyond The Horizon"><br>
-            Embers Melody<br>
-            4/28に開催予定のM3 2024春において<a href="https://embersmelody.com/">Embers Melody</a>（外部サイト）より頒布されるコンピレーションアルバム"Far Beyond The Horizon"の背景CGを制作しました。<br>
-            <a href="https://embersmelody.com/pages/releases/emph008">"Far Beyond The Horizon"特設サイト</a>（外部サイト）<br>
-            アセット - Xfrog, Silva3D, MEGASCANS
+            <span class="tile__date">2024-04-22</span>
+            <img src="./img/works/far-beyond-the-horizon-2024.jpg" alt="Far Beyond The Horizon">
+            <span class="tile__title">Far Beyond The Horizon</span>
+            <p class="tile__client">Embers Melody</p>
+            <p class="tile__body">
+              4/28に開催予定のM3 2024春において<a href="https://embersmelody.com/">Embers Melody</a>（外部サイト）より頒布されるコンピレーションアルバム"Far Beyond The Horizon"の背景CGを制作しました。<br>
+              <a href="https://embersmelody.com/pages/releases/emph008">"Far Beyond The Horizon"特設サイト</a>（外部サイト）
+            </p>
+            <dl class="tile__meta">
+              <dt>アセット</dt>
+              <dd>Xfrog, Silva3D, MEGASCANS</dd>
+            </dl>
           </div>
 
           <div>
-            2022-11-03<br>
-            <img src="./img/works/all-the-year-around-2022.jpg" alt="All The Year Around"><br>
-            Embers Melody<br>
-            10/30に開催予定のM3 2022秋において<a href="https://embersmelody.com/">Embers Melody</a>（外部サイト）より頒布されるコンピレーションアルバム"All The Year Around"の背景CGを制作しました。<br>
-            <a href="https://embersmelody.com/pages/releases/emph006">"All The Year Around"特設サイト</a>（外部サイト）<br>
-            アセット - Xfrog, Silva3D, MEGASCANS
+            <span class="tile__date">2022-11-03</span>
+            <img src="./img/works/all-the-year-around-2022.jpg" alt="All The Year Around">
+            <span class="tile__title">All The Year Around</span>
+            <p class="tile__client">Embers Melody</p>
+            <p class="tile__body">
+              10/30に開催予定のM3 2022秋において<a href="https://embersmelody.com/">Embers Melody</a>（外部サイト）より頒布されるコンピレーションアルバム"All The Year Around"の背景CGを制作しました。<br>
+              <a href="https://embersmelody.com/pages/releases/emph006">"All The Year Around"特設サイト</a>（外部サイト）
+            </p>
+            <dl class="tile__meta">
+              <dt>アセット</dt>
+              <dd>Xfrog, Silva3D, MEGASCANS</dd>
+            </dl>
           </div>
 
           <div>
-            2021-10-17<br>
-            <img src="./img/works/fragments-2021.jpg" alt="Fragments"><br>
-            Embers Melody様<br>
-            10/31に開催予定のM3 2021秋において<a href="https://embersmelody.com/">Embers Melody</a>（外部サイト）様より頒布されるコンピレーションアルバム"Fragments"の背景CGを制作しました。<br>
-            <a href="https://embersmelody.com/pages/releases/emph004">"Fragments"特設サイト</a>（外部サイト）<br>
-            アセット - Xfrog, MEGASCANS
+            <span class="tile__date">2021-10-17</span>
+            <img src="./img/works/fragments-2021.jpg" alt="Fragments">
+            <span class="tile__title">Fragments</span>
+            <p class="tile__client">Embers Melody様</p>
+            <p class="tile__body">
+              10/31に開催予定のM3 2021秋において<a href="https://embersmelody.com/">Embers Melody</a>（外部サイト）様より頒布されるコンピレーションアルバム"Fragments"の背景CGを制作しました。<br>
+              <a href="https://embersmelody.com/pages/releases/emph004">"Fragments"特設サイト</a>（外部サイト）
+            </p>
+            <dl class="tile__meta">
+              <dt>アセット</dt>
+              <dd>Xfrog, MEGASCANS</dd>
+            </dl>
           </div>
 
           <div>
-            2020-05-01<br>
-            <img src="./img/works/dpb14-2020.jpg" alt="a deep sigh of relief"><br>
-            ZOOYA様<br>
-            5/1に開催されたDeeProgBox Vol.14のストリーミング背景を制作しました。（依頼制作物ではなく，制作したものを送付したところ採用いただきました）
+            <span class="tile__date">2020-05-01</span>
+            <img src="./img/works/dpb14-2020.jpg" alt="a deep sigh of relief">
+            <span class="tile__title">DeeProgBox Vol.14 ストリーミング背景</span>
+            <p class="tile__client">ZOOYA様</p>
+            <p class="tile__body">
+              5/1に開催されたDeeProgBox Vol.14のストリーミング背景を制作しました。（依頼制作物ではなく，制作したものを送付したところ採用いただきました）
+            </p>
           </div>
 
           <div>
-            2020-03-01<br>
-            <img src="./img/works/afterglow-2020.jpg" alt="afterglow"><br>
-            Embers Melody様<br>
-            M3 2020春で<a href="https://embersmelody.com/">Embers Melody</a>（外部サイト）様より頒布されたコンピレーションアルバム"afterglow"の背景CGを制作しました。<br>
-            楽曲は電子データでも販売されています。ぜひ。<br>
-            植生 - Xfrog, Silva3D
+            <span class="tile__date">2020-03-01</span>
+            <img src="./img/works/afterglow-2020.jpg" alt="afterglow">
+            <span class="tile__title">afterglow</span>
+            <p class="tile__client">Embers Melody様</p>
+            <p class="tile__body">
+              M3 2020春で<a href="https://embersmelody.com/">Embers Melody</a>（外部サイト）様より頒布されたコンピレーションアルバム"afterglow"の背景CGを制作しました。<br>
+              楽曲は電子データでも販売されています。ぜひ。
+            </p>
+            <dl class="tile__meta">
+              <dt>植生</dt>
+              <dd>Xfrog, Silva3D</dd>
+            </dl>
           </div>
 
           <div>
-            2019-10-27<br>
-            <img src="./img/works/leaf-2019.jpg" alt="a deep sigh of relief"><br>
-            「a deep sigh of relief（深い安堵のため息）」<br>
-            依頼でも共同というわけでもないですが，M3 2019秋でSakura Recordz!様より頒布された<a href="http://release.sakurarecordz.com/relief/">締め切りコンピ Re:Lief Compilation 19</a>（外部サイト）に「楽曲以外での参加枠」で参加しました。フリー素材です。<br>
-            後日通販も予定されており，純利益はすべて台風19号災害募金として寄付されるそうです。ぜひ。<br>
-            8k8kおよび4k4kサイズの素材を収録しましたが，4k4kのファイルはこちらからダウンロード可能となっています。<br>
-            <a href="https://www.dropbox.com/s/uuci3gs1fsdt6yx/a_deep_sigh_of_relief_pub.zip?dl=0">a_deep_sigh_of_relief_pub</a>（外部サイト）
-          </div>
-    
-          <div>
-            2017-07-12<br>
-            <img src="./img/works/dusk-2017.jpg" alt="DUSK"><br>
-            <a href="https://www.nicovideo.jp/watch/sm31540584">【初音ミク】DUSK (Mwk Remix)【Dubstep】</a>（外部サイト）<br>
-            <a href="https://soundcloud.com/mwk_094/dusk-mwk-remix">Osanzi - DUSK (Mwk Remix) [4 O'Clock!]</a>（外部サイト）<br>
-            Mwk様<br>
-            背景CGを制作しました。
+            <span class="tile__date">2019-10-27</span>
+            <img src="./img/works/leaf-2019.jpg" alt="a deep sigh of relief">
+            <span class="tile__title">a deep sigh of relief（深い安堵のため息）</span>
+            <p class="tile__client">Sakura Recordz!様</p>
+            <p class="tile__body">
+              依頼でも共同というわけでもないですが，M3 2019秋でSakura Recordz!様より頒布された<a href="http://release.sakurarecordz.com/relief/">締め切りコンピ Re:Lief Compilation 19</a>（外部サイト）に「楽曲以外での参加枠」で参加しました。フリー素材です。<br>
+              後日通販も予定されており，純利益はすべて台風19号災害募金として寄付されるそうです。ぜひ。<br>
+              8k8kおよび4k4kサイズの素材を収録しましたが，4k4kのファイルはこちらからダウンロード可能となっています。<br>
+              <a href="https://www.dropbox.com/s/uuci3gs1fsdt6yx/a_deep_sigh_of_relief_pub.zip?dl=0">a_deep_sigh_of_relief_pub</a>（外部サイト）
+            </p>
           </div>
 
           <div>
-            2016-11-20, 2016-12-03<br>
-            <img src="./img/works/konnya_mt_sunset-2016.jpg" alt="konnya_mt_sunset"><br>
-            <img src="./img/works/konnya_north-2016.jpg" alt="konnya_north"><br>
-            株式会社グリニッジクリエイティブマネージメント様<br>
-            天月 -あまつき-様ワンマンライブ「今夜、君が待つあの丘へ」の演出用背景を制作しました。<br>
-            使用モデル（敬称略）：<br>
-            植生 - Xfrog, Silva3D<br>
-            星空 - 星風夜MMD (tagoshu)
+            <span class="tile__date">2017-07-12</span>
+            <img src="./img/works/dusk-2017.jpg" alt="DUSK">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm31540584">【初音ミク】DUSK (Mwk Remix)【Dubstep】</a>（外部サイト）
+            </span>
+            <p class="tile__client">Mwk様</p>
+            <p class="tile__body">
+              背景CGを制作しました。<br>
+              <a href="https://soundcloud.com/mwk_094/dusk-mwk-remix">Osanzi - DUSK (Mwk Remix) [4 O'Clock!]</a>（外部サイト）
+            </p>
           </div>
 
           <div>
-            2016-05-14<br>
-            <img src="./img/works/shion-hinano-2016.jpg" alt="shion-hinano-scheader"><br>
-            <a href="https://soundcloud.com/shion-hinano">Shion Hinano</a>（外部サイト）<br>
-            雛野 しをん様<br>
-            Soundcloudヘッダイメージを制作しました。<br>
-            使用モデル（敬称略）：<br>
-            植生 - Xfrog, Silva3D<br>
-            鳥 - NWDA
+            <span class="tile__date">2016-11-20 / 2016-12-03</span>
+            <img src="./img/works/konnya_mt_sunset-2016.jpg" alt="konnya_mt_sunset">
+            <img src="./img/works/konnya_north-2016.jpg" alt="konnya_north">
+            <span class="tile__title">天月 -あまつき- ワンマンライブ「今夜、君が待つあの丘へ」演出用背景</span>
+            <p class="tile__client">株式会社グリニッジクリエイティブマネージメント様</p>
+            <p class="tile__body">
+              ワンマンライブの演出用背景を制作しました。
+            </p>
+            <dl class="tile__meta">
+              <dt>植生</dt>
+              <dd>Xfrog, Silva3D</dd>
+              <dt>星空</dt>
+              <dd>星風夜MMD (tagoshu)</dd>
+            </dl>
           </div>
 
           <div>
-            2015-12-06<br>
-            <img src="./img/works/karuma-2015.jpg" alt="Karuma"><br>
-            <a href="https://www.nicovideo.jp/watch/sm27739415">【巡音ルカV4X】球体のカルマ【パティ不動産】</a>（外部サイト）
+            <span class="tile__date">2016-05-14</span>
+            <img src="./img/works/shion-hinano-2016.jpg" alt="shion-hinano-scheader">
+            <span class="tile__title">
+              <a href="https://soundcloud.com/shion-hinano">Shion Hinano</a>（外部サイト） Soundcloudヘッダ
+            </span>
+            <p class="tile__client">雛野 しをん様</p>
+            <p class="tile__body">
+              Soundcloudヘッダイメージを制作しました。
+            </p>
+            <dl class="tile__meta">
+              <dt>植生</dt>
+              <dd>Xfrog, Silva3D</dd>
+              <dt>鳥</dt>
+              <dd>NWDA</dd>
+            </dl>
+          </div>
+
+          <div>
+            <span class="tile__date">2015-12-06</span>
+            <img src="./img/works/karuma-2015.jpg" alt="Karuma">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm27739415">【巡音ルカV4X】球体のカルマ【パティ不動産】</a>（外部サイト）
+            </span>
             <div class="embedded-movie">
               <iframe width="400" height="225" src="https://www.youtube.com/embed/Sc8gwAmMEkg" style="border:none;" title="【巡音ルカV4X】球体のカルマ【パティ不動産】"></iframe>
             </div>
-            パティ不動産（鹿島公行）様<br>
-            背景のCGを制作しました。間奏の空背景は<a href="./incskies/">++skies;</a>です。<br>
-            使用モデル（敬称略）：<br>
-            hzeo式巡音ルカ - hzeo
+            <p class="tile__client">パティ不動産（鹿島公行）様</p>
+            <p class="tile__body">
+              背景のCGを制作しました。間奏の空背景は<a href="./incskies/">++skies;</a>です。
+            </p>
+            <dl class="tile__meta">
+              <dt>hzeo式巡音ルカ</dt>
+              <dd>hzeo</dd>
+            </dl>
           </div>
 
           <div>
-            2015-10-25<br>
-            <img src="./img/works/sunday-2015.jpg" alt="Sunday Deadline"><br>
-            <a href="https://www.nicovideo.jp/watch/sm27443110">【M3-2015秋】日曜日締め切りコンピ【クロスフェードデモ】</a>（外部サイト）<br>
-            わかめスタジオ案件。<br>
-            背景の空を制作しました。
+            <span class="tile__date">2015-10-25</span>
+            <img src="./img/works/sunday-2015.jpg" alt="Sunday Deadline">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm27443110">【M3-2015秋】日曜日締め切りコンピ【クロスフェードデモ】</a>（外部サイト）
+            </span>
+            <p class="tile__client">わかめスタジオ案件</p>
+            <p class="tile__body">背景の空を制作しました。</p>
           </div>
 
           <div>
-            2015-06-19<br>
-            <img src="./img/works/kikousei-2015.jpg" alt="Kikousei"><br>
-            <a href="https://www.nicovideo.jp/watch/sm26521218">【GUMI】希行性の残羽【パティ不動産】</a>（外部サイト）
+            <span class="tile__date">2015-06-19</span>
+            <img src="./img/works/kikousei-2015.jpg" alt="Kikousei">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm26521218">【GUMI】希行性の残羽【パティ不動産】</a>（外部サイト）
+            </span>
             <div class="embedded-movie">
               <iframe width="400" height="225" src="https://www.youtube.com/embed/bfkd9uPJg7Y" style="border:none;" title="【GUMI】希行性の残羽【パティ不動産】"></iframe>
             </div>
-            パティ不動産（鹿島公行）様<br>
-            わかめスタジオ案件。<br>
-            背景の空を制作しました。
+            <p class="tile__client">パティ不動産（鹿島公行）様 / わかめスタジオ案件</p>
+            <p class="tile__body">背景の空を制作しました。</p>
           </div>
 
           <div>
-            2015-04-26<br>
-            <img src="./img/works/monday-2015.jpg" alt="Monday Deadline"><br>
-            <a href="https://www.nicovideo.jp/watch/sm26110478">【M3-2015春】月曜日締め切りコンピクロスフェード【デスマ】</a>（外部サイト）<br>
-            わかめスタジオ案件。<br>
-            背景の空を制作しました。
+            <span class="tile__date">2015-04-26</span>
+            <img src="./img/works/monday-2015.jpg" alt="Monday Deadline">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm26110478">【M3-2015春】月曜日締め切りコンピクロスフェード【デスマ】</a>（外部サイト）
+            </span>
+            <p class="tile__client">わかめスタジオ案件</p>
+            <p class="tile__body">背景の空を制作しました。</p>
           </div>
 
           <div>
-            2015-03-05<br>
-            <img src="./img/works/desire-2015.jpg" alt="Desire"><br>
-            <a href="https://www.nicovideo.jp/watch/sm25715984">【2015春M3】 Desire EP 【クロスフェード】</a>（外部サイト）
+            <span class="tile__date">2015-03-05</span>
+            <img src="./img/works/desire-2015.jpg" alt="Desire">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm25715984">【2015春M3】 Desire EP 【クロスフェード】</a>（外部サイト）
+            </span>
             <div class="embedded-movie">
               <iframe width="400" height="225" src="https://www.youtube.com/embed/RpRpRWJOIAw" style="border:none;" title="【2015春M3】 Desire EP 【クロスフェード】"></iframe>
             </div>
-            わかめスタジオ案件。<br>
-            CDジャケット画を制作しました。PVにも私が作成した空が多数使用されています。
+            <p class="tile__client">わかめスタジオ案件</p>
+            <p class="tile__body">CDジャケット画を制作しました。PVにも私が作成した空が多数使用されています。</p>
           </div>
 
           <div>
-            2015-01-28<br>
-            <img src="./img/works/reimei-2015.jpg" alt="Reimei"><br>
-            <a href="https://www.nicovideo.jp/watch/sm25441987">【IA】黎明【オリジナル】</a>（外部サイト）<br>
-            kaff様<br>
-            背景CGを制作しました。<br>
-            使用モデル（敬称略）：<br>
-            IAx - mqdl<br>
-            植生 - Xfrog, Silva3D<br>
-            建物 - TurboSquid<br>
-            鳥 - NWDA
+            <span class="tile__date">2015-01-28</span>
+            <img src="./img/works/reimei-2015.jpg" alt="Reimei">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm25441987">【IA】黎明【オリジナル】</a>（外部サイト）
+            </span>
+            <p class="tile__client">kaff様</p>
+            <p class="tile__body">背景CGを制作しました。</p>
+            <dl class="tile__meta">
+              <dt>IAx</dt>
+              <dd>mqdl</dd>
+              <dt>植生</dt>
+              <dd>Xfrog, Silva3D</dd>
+              <dt>建物</dt>
+              <dd>TurboSquid</dd>
+              <dt>鳥</dt>
+              <dd>NWDA</dd>
+            </dl>
           </div>
 
           <div>
-            2014-10-26<br>
-            <img src="./img/works/tuesday-2014.jpg" alt="Tuesday Deadline"><br>
-            <a href="https://www.nicovideo.jp/watch/sm24770994">【デスマ】 #火曜日締め切りコンピ 【クロスフェード】</a>（外部サイト）<br>
-            わかめスタジオ案件。<br>
-            背景の空を制作しました。
+            <span class="tile__date">2014-10-26</span>
+            <img src="./img/works/tuesday-2014.jpg" alt="Tuesday Deadline">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm24770994">【デスマ】 #火曜日締め切りコンピ 【クロスフェード】</a>（外部サイト）
+            </span>
+            <p class="tile__client">わかめスタジオ案件</p>
+            <p class="tile__body">背景の空を制作しました。</p>
           </div>
 
           <div>
-            2014-08-28<br>
-            <img src="./img/works/holograph-1-2013.jpg" alt="Holograph"><br>
-            <img src="./img/works/holograph-2-2013.jpg" alt="Holograph"><br>
-            <a href="https://www.nicovideo.jp/watch/sm24341422">【初音ミクAppend】　Holograph　【オリジナルMV】</a>（外部サイト）<br>
-            楽曲：なぎ様<br>
-            映像：黒井心様<br>
-            空を作ってお手伝いしました。<br>
-            VOCALOID CINEMA PARTY 2014，札幌国際短編映画祭UGCアワード上映作品。<br>
+            <span class="tile__date">2014-08-28</span>
+            <img src="./img/works/holograph-1-2013.jpg" alt="Holograph">
+            <img src="./img/works/holograph-2-2013.jpg" alt="Holograph">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm24341422">【初音ミクAppend】　Holograph　【オリジナルMV】</a>（外部サイト）
+            </span>
+            <p class="tile__client">楽曲：なぎ様 / 映像：黒井心様</p>
+            <p class="tile__body">
+              空を作ってお手伝いしました。<br>
+              VOCALOID CINEMA PARTY 2014，札幌国際短編映画祭UGCアワード上映作品。
+            </p>
           </div>
 
           <div>
-            2014-08-17<br>
-            <img src="./img/works/wednesday-2014.jpg" alt="Wednesday Deadline"><br>
-            <a href="https://www.nicovideo.jp/watch/sm24256661">【C86超短納期コンピ】 #水曜日締め切りコンピ 【クロスフェードデモ】</a>（外部サイト）<br>
-            わかめスタジオ案件。<br>
-            背景の空を制作しました。
+            <span class="tile__date">2014-08-17</span>
+            <img src="./img/works/wednesday-2014.jpg" alt="Wednesday Deadline">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm24256661">【C86超短納期コンピ】 #水曜日締め切りコンピ 【クロスフェードデモ】</a>（外部サイト）
+            </span>
+            <p class="tile__client">わかめスタジオ案件</p>
+            <p class="tile__body">背景の空を制作しました。</p>
           </div>
 
           <div>
-            2013-11-09<br>
-            <img src="./img/works/after-2013.jpg" alt="After"><br>
-            <a href="https://www.nicovideo.jp/watch/sm22214580">【IA】 After 【オリジナル曲】</a>（外部サイト）<br>
-            torte様<br>
-            背景CGを制作しました。<br>
-            使用モデル（敬称略）：<br>
-            IAx - mqdl<br>
-            植生 - Xfrog, Silva3D
+            <span class="tile__date">2013-11-09</span>
+            <img src="./img/works/after-2013.jpg" alt="After">
+            <span class="tile__title">
+              <a href="https://www.nicovideo.jp/watch/sm22214580">【IA】 After 【オリジナル曲】</a>（外部サイト）
+            </span>
+            <p class="tile__client">torte様</p>
+            <p class="tile__body">背景CGを制作しました。</p>
+            <dl class="tile__meta">
+              <dt>IAx</dt>
+              <dd>mqdl</dd>
+              <dt>植生</dt>
+              <dd>Xfrog, Silva3D</dd>
+            </dl>
           </div>
         </div>
 
         <h3>景観CG（自主制作）</h3>
-        <p>
-          <img src="img/dof.jpg" alt="Focus - revision A"><br>
-          下記のサイトからご覧ください。（外部サイト）<br>
-          <a href="https://seiga.nicovideo.jp/user/illust/19471525">ニコニコ静画（主要拠点）</a><br>
-          <a href="https://pixiv.me/ao8722">Pixiv</a><br>
-          <a href="https://www.artstation.com/aokcub">ArtStation (2019～)</a><br>
-        </p>
-
+        <div class="external-links">
+          <figure>
+            <img src="img/dof.jpg" alt="Focus - revision A">
+          </figure>
+          <div>
+            <p>自主制作作品は下記のサイトでご覧いただけます。</p>
+            <ul class="external-links__list">
+              <li><a class="pill" href="https://seiga.nicovideo.jp/user/illust/19471525">ニコニコ静画（主要拠点） ↗</a></li>
+              <li><a class="pill" href="https://pixiv.me/ao8722">Pixiv ↗</a></li>
+              <li><a class="pill" href="https://www.artstation.com/aokcub">ArtStation (2019〜) ↗</a></li>
+            </ul>
+          </div>
+        </div>
 
       </section>
 
       <section id="software">
         <h2 class="section-title">主な使用ソフトウェア</h2>
 
-        <ul>
-          <li>Terragen 4 Professional</li>
-          <li>Gaea Professional</li>
-          <li>Photoshop CC</li>
+        <p>主に下記ツールで制作しています。</p>
+        <ul class="tag-list">
+          <li><span class="chip">Terragen 4 Professional</span></li>
+          <li><span class="chip">Gaea Professional</span></li>
+          <li><span class="chip">Photoshop CC</span></li>
         </ul>
       </section>
 

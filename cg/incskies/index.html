@@ -35,6 +35,10 @@
         <p class="splash__subtitle">
           High-Resolution Photo-realistic Textures
         </p>
+        <div class="splash__cta">
+          <a class="pill pill--ghost" href="#download">ダウンロード</a>
+          <a class="pill pill--ghost" href="#user-guide">利用条件を見る</a>
+        </div>
       </div>
     </div>
 
@@ -50,28 +54,42 @@
 
       <main>
         <aside class="content-wrapper__item" aria-label="お知らせ">
-          <div class="alert alert-success">2024/06/02&nbsp;++skies; 050をリリースしました。</div>
-          <div class="alert alert-success">2025/02/17&nbsp;ユーザーズガイド Rev.Kを発行しました。</div>
+          <dl class="news-list">
+            <dt>2025/02/17</dt>
+            <dd>ユーザーズガイド Rev.Kを発行しました。</dd>
+            <dt>2024/06/02</dt>
+            <dd>++skies; 050をリリースしました。</dd>
+          </dl>
         </aside>
 
       <section id="incskies" class="content-wrapper__item">
         <h1>++skies; (Incremented Skies)</h1>
 
-        <p>
-          ゲーム，映像，イラスト制作を行っている皆様，大きくてフォトリアルな空，いかがですか？<br>
+        <p class="lead">
+          ゲーム，映像，イラスト制作を行っている皆様，大きくてフォトリアルな空，いかがですか？
           ++skies;は，CGによる風景パノラマテクスチャです。HDRi対応，最大32k16kサイズの空であなたのシーンを彩ります。
         </p>
 
-        <h2>ネーミングについて</h2>
-        <p>
-          多くのプログラミング言語において，「++」は「increment演算子」を指します。incrementという単語は「増加」を意味しますが、ここでは「1を加える」という意味を持ちます。常に一歩進んだ美しさ，解像度を持つ空で，皆様の作品を彩りたいという思いを込めています。<br>
-          また，これからも一つずつ空を増やし，成長し続けたいという願いも込めています。
-        </p>
+        <aside class="callout">
+          <span class="callout__label">Naming — ++ について</span>
+          <p>
+            多くのプログラミング言語において，「++」は「increment演算子」を指します。incrementという単語は「増加」を意味しますが，ここでは「1を加える」という意味を持ちます。常に一歩進んだ美しさ，解像度を持つ空で，皆様の作品を彩りたいという思いを込めています。
+          </p>
+          <p>
+            また，これからも一つずつ空を増やし，成長し続けたいという願いも込めています。
+          </p>
+        </aside>
 
         <h2>++skies; PV</h2>
-        <p>
-          <a href="https://www.nicovideo.jp/watch/sm27686199">++skies; - Incremented Skies【スカイドーム素材】</a>（ニコニコ動画）
-        </p>
+        <a class="media-card" href="https://www.nicovideo.jp/watch/sm27686199">
+          <figure class="media-card__thumb">
+            <img loading="lazy" src="./img/samples/incskies_001.jpg" alt="++skies; PV thumbnail">
+          </figure>
+          <div>
+            <p class="media-card__title">++skies; - Incremented Skies【スカイドーム素材】</p>
+            <p class="media-card__meta">ニコニコ動画 ↗</p>
+          </div>
+        </a>
       </section>
 
       <section id="features" class="content-wrapper__item">
@@ -80,17 +98,19 @@
         <div class="features-grid">
 
           <div>
-            <h3>最大32k16k (32768px x 16384px)の高解像度</h3>
+            <span class="feature-num">FEATURE 01</span>
+            <h3>最大32k (32768px × 16384px) の高解像度</h3>
             <figure class="text-centered">
-              <img loading="lazy" src="./img/features/32k16k.jpg" alt="32k16k">
+              <img loading="lazy" src="./img/features/32k16k.jpg" alt="32k">
             </figure>
             <p>
-              ++skies;は，標準の解像度を16k8kサイズとし，8k4kサイズの低解像度版を用意しています。その上で，一部のテクスチャについては
-              32k16k/24k12k/20k10kサイズの高解像度版を用意しています。FullHDサイズの作品にご利用いただいても十分な画質を提供します。
+              ++skies;は，標準の解像度を16kサイズとし，8kサイズの低解像度版を用意しています。その上で，一部のテクスチャについては
+              32k/24k/20kサイズの高解像度版を用意しています。FullHDサイズの作品にご利用いただいても十分な画質を提供します。
             </p>
           </div>
 
           <div>
+            <span class="feature-num">FEATURE 02</span>
             <h3>HDRフォーマットサポート</h3>
             <figure class="text-centered">
               <img loading="lazy" src="./img/features/hdri.jpg" alt="hdri">
@@ -108,874 +128,1097 @@
 
         <h3>パッケージ</h3>
         <p>
-          ++skies;は，用途に合わせて選択していただけるいくつかのパッケージを用意しています。<br>
-          各パッケージ末尾の数字によって，同梱されるテクスチャの解像度が異なります。<br>
-          HDRフォーマットをご希望の方は、"HDRxx"パッケージ（Radiance: .hdr形式）または"EXRxx"パッケージ（OpenEXR: .exr）形式をご利用ください。
-          PNG形式をご希望の方は、"PNGxx"パッケージをご利用ください。<br>
+          ++skies;は，フォーマット（Radiance / OpenEXR / PNG / PNG + MMD）と解像度（最大32k〜8k）の組み合わせから選んでご利用いただけます。HDRiのメリットを活かしたい場合は Radiance または OpenEXR を，MMDで利用する場合は PNG + MMD（アクセサリ同梱）をお選びください。
+        </p>
 
-          HDR32 / EXR32 / PNG32 / MMD32 : 32768px x 16384px<br>
-          HDR24 / EXR24 / PNG24 / MMD24 : 24000px x 12000px<br>
-          HDR20 / EXR20 / PNG20 / MMD20 : 20000px x 10000px<br>
-          HDR16 / EXR16 / PNG16 / MMD16 : 16384px x 8192px (++skies; 017 - ), 16000px x 8000px (++skies; 000 - ++skies; 016)<br>
-          HDR8 / EXR8 / PNG8 / MMD8 : 8192px x 4096px (++skies; 017 - ), 8000px x 4000px (++skies; 000 - ++skies; 016)
-        </p>
-        <p>
-          MMDで使用する場合，"MMDxx"パッケージをダウンロードしてご利用ください。すぐに使えるアクセサリを同梱しています。<br>
-          <em>MMD16/HDR16以上は非常に大きなメモリ領域を消費します。ご注意下さい。</em>
-        </p>
-        <p>
-          <em><a href="https://github.com/ray-cast/ray-mmd">ray-mmdプラグイン</a>と組み合わせて使用される場合は，HDRxxパッケージを使うことを推奨します。MMDパッケージではHDRiのメリットが得られません。</em>
-        </p>
+        <div class="package-matrix-wrapper">
+          <table class="package-matrix">
+            <thead>
+              <tr>
+                <th scope="col">形式</th>
+                <th scope="col">32k</th>
+                <th scope="col">24k</th>
+                <th scope="col">20k</th>
+                <th scope="col">16k</th>
+                <th scope="col">8k</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Radiance (.hdr)</th>
+                <td>32768×16384</td>
+                <td>24000×12000</td>
+                <td>20000×10000</td>
+                <td>16384×8192</td>
+                <td>8192×4096</td>
+              </tr>
+              <tr>
+                <th scope="row">OpenEXR (.exr)</th>
+                <td>32768×16384</td>
+                <td>24000×12000</td>
+                <td>20000×10000</td>
+                <td>16384×8192</td>
+                <td>8192×4096</td>
+              </tr>
+              <tr>
+                <th scope="row">PNG</th>
+                <td>32768×16384</td>
+                <td>24000×12000</td>
+                <td>20000×10000</td>
+                <td>16384×8192</td>
+                <td>8192×4096</td>
+              </tr>
+              <tr>
+                <th scope="row">PNG + MMD</th>
+                <td>32768×16384</td>
+                <td>24000×12000</td>
+                <td>20000×10000</td>
+                <td>16384×8192</td>
+                <td>8192×4096</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="note">
+          <p>※ 16k / 8k サイズは ++skies; 017 以降 16384×8192 / 8192×4096，000〜016 は 16000×8000 / 8000×4000 です。</p>
+          <p>※ MMD16k / HDR16k 以上は非常に大きなメモリ領域を消費します。ご注意ください。</p>
+          <p>※ <a href="https://github.com/ray-cast/ray-mmd">ray-mmd プラグイン</a>と組み合わせて使用される場合は，HDRxxパッケージを推奨します（MMDパッケージではHDRiのメリットが得られません）。</p>
+        </aside>
 
         <h3 id="user-guide">利用条件・ユーザーズガイド</h3>
         <p>
-          ++skies;の利用条件は下記に記載しています。ご利用になる際には必ず一読ください。<br>
-          利用条件は適宜アップデートされます。<br>
-          <a href="https://github.com/aokcubcg/incskies_terms/blob/master/terms.md">利用規約</a>（外部サイト）<br>
-          <a href="https://github.com/aokcubcg/incskies_terms/blob/master/guideline.md">ガイドライン</a>（外部サイト）<br>
+          ++skies;の利用条件は下記に記載しています。ご利用になる際には必ず一読ください。利用条件は適宜アップデートされます。
         </p>
+
+        <div class="doc-cards">
+          <a class="doc-card" href="https://github.com/aokcubcg/incskies_terms/blob/master/terms.md">
+            <span class="doc-card__label">DOCUMENT — terms</span>
+            <span class="doc-card__title">利用規約</span>
+            <span class="doc-card__desc">++skies; をご利用いただく際の基本ルールを定めています。</span>
+            <span class="doc-card__cta">GitHub で読む ↗</span>
+          </a>
+          <a class="doc-card" href="https://github.com/aokcubcg/incskies_terms/blob/master/guideline.md">
+            <span class="doc-card__label">DOCUMENT — guideline</span>
+            <span class="doc-card__title">ガイドライン</span>
+            <span class="doc-card__desc">クレジット表記，加工，配布等の具体的な運用ガイドです。</span>
+            <span class="doc-card__cta">GitHub で読む ↗</span>
+          </a>
+        </div>
+
         <p>
-          また，++skies;に関する説明を記載したガイドを各パッケージに同梱しています。<br>
-          なお，ユーザーズガイドは適宜アップデートされます。
+          また，++skies;に関する説明を記載したガイドを各パッケージに同梱しています。なお，ユーザーズガイドは適宜アップデートされます。
         </p>
-        <h4>最新バージョン</h4>
-        <p>
-          最新版（Rev. <span style="color:#ff2222;">K</span>）はこちらです。<br>
-          <a href="./docs/user-guide.pdf">++skies; User's Guide</a>
-          (2025-02-17)
-        </p>
+
+        <div class="user-guide-bar">
+          <span class="user-guide-bar__rev">Rev. K</span>
+          <span class="user-guide-bar__title">++skies; User's Guide <small>(2025-02-17)</small></span>
+          <a class="pill pill--solid" href="./docs/user-guide.pdf">PDF をダウンロード ↓</a>
+        </div>
 
         <h3>素材リスト</h3>
 
         <div class="img-list-grid">
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_050.jpg" alt="++skies; 050" width=400 height=300><br>
-            Sunlight Elevation: +7.88 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_hdr16.zip" title="++skies; 050 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_hdr8.zip" title="++skies; 050 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_exr16.zip" title="++skies; 050 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_exr8.zip" title="++skies; 050 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_png16.zip" title="++skies; 050 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_png8.zip" title="++skies; 050 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_mmd16.zip" title="++skies; 050 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_mmd8.zip" title="++skies; 050 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+7.88" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_050.jpg" alt="++skies; 050" width=400 height=300>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 050</span>
+              <span class="sample-card__sun">☀ +7.88°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_hdr16.zip" title="++skies; 050 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_hdr8.zip" title="++skies; 050 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_exr16.zip" title="++skies; 050 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_exr8.zip" title="++skies; 050 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_png16.zip" title="++skies; 050 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_png8.zip" title="++skies; 050 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_mmd16.zip" title="++skies; 050 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_050_mmd8.zip" title="++skies; 050 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_049.jpg" alt="++skies; 049" width=400 height=300><br>
-            Sunlight Elevation: +0.667 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_hdr16.zip" title="++skies; 049 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_hdr8.zip" title="++skies; 049 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_exr16.zip" title="++skies; 049 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_exr8.zip" title="++skies; 049 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_png16.zip" title="++skies; 049 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_png8.zip" title="++skies; 049 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_mmd16.zip" title="++skies; 049 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_mmd8.zip" title="++skies; 049 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+0.667" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_049.jpg" alt="++skies; 049" width=400 height=300>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 049</span>
+              <span class="sample-card__sun">☀ +0.667°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_hdr16.zip" title="++skies; 049 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_hdr8.zip" title="++skies; 049 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_exr16.zip" title="++skies; 049 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_exr8.zip" title="++skies; 049 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_png16.zip" title="++skies; 049 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_png8.zip" title="++skies; 049 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_mmd16.zip" title="++skies; 049 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_049_mmd8.zip" title="++skies; 049 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_048.jpg" alt="++skies; 048" width=400 height=200><br>
-            Sunlight Elevation: +5.26 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_hdr16.zip" title="++skies; 048 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_hdr8.zip" title="++skies; 048 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_exr16.zip" title="++skies; 048 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_exr8.zip" title="++skies; 048 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_png16.zip" title="++skies; 048 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_png8.zip" title="++skies; 048 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_mmd16.zip" title="++skies; 048 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_mmd8.zip" title="++skies; 048 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+5.26" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_048.jpg" alt="++skies; 048" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 048</span>
+              <span class="sample-card__sun">☀ +5.26°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_hdr16.zip" title="++skies; 048 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_hdr8.zip" title="++skies; 048 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_exr16.zip" title="++skies; 048 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_exr8.zip" title="++skies; 048 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_png16.zip" title="++skies; 048 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_png8.zip" title="++skies; 048 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_mmd16.zip" title="++skies; 048 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_048_mmd8.zip" title="++skies; 048 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_047.jpg" alt="++skies; 047" width=400 height=200><br>
-            Sunlight Elevation: +13.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_hdr20.zip" title="++skies; 047 hdr20 package">HDR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_hdr16.zip" title="++skies; 047 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_hdr8.zip" title="++skies; 047 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_exr20.zip" title="++skies; 047 exr20 package">EXR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_exr16.zip" title="++skies; 047 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_exr8.zip" title="++skies; 047 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_png20.zip" title="++skies; 047 png20 package">PNG20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_png16.zip" title="++skies; 047 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_png8.zip" title="++skies; 047 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_mmd20.zip" title="++skies; 047 mmd20 package">MMD20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_mmd16.zip" title="++skies; 047 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_mmd8.zip" title="++skies; 047 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+13.0" data-formats="hdr20 hdr16 hdr8 exr20 exr16 exr8 png20 png16 png8 mmd20 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_047.jpg" alt="++skies; 047" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 047</span>
+              <span class="sample-card__sun">☀ +13.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_hdr20.zip" title="++skies; 047 HDR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_hdr16.zip" title="++skies; 047 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_hdr8.zip" title="++skies; 047 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_exr20.zip" title="++skies; 047 EXR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_exr16.zip" title="++skies; 047 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_exr8.zip" title="++skies; 047 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_png20.zip" title="++skies; 047 PNG20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_png16.zip" title="++skies; 047 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_png8.zip" title="++skies; 047 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_mmd20.zip" title="++skies; 047 MMD20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_mmd16.zip" title="++skies; 047 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_047_mmd8.zip" title="++skies; 047 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_046.jpg" alt="++skies; 046" width=400 height=200><br>
-            Sunlight Elevation: +27.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_hdr16.zip" title="++skies; 046 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_hdr8.zip" title="++skies; 046 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_exr16.zip" title="++skies; 046 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_exr8.zip" title="++skies; 046 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_png16.zip" title="++skies; 046 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_png8.zip" title="++skies; 046 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_mmd16.zip" title="++skies; 046 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_mmd8.zip" title="++skies; 046 mmd8 package">MMD8</a><br>
-          </div>
+          <article class="sample-card" data-sun="+27.0" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_046.jpg" alt="++skies; 046" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 046</span>
+              <span class="sample-card__sun">☀ +27.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_hdr16.zip" title="++skies; 046 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_hdr8.zip" title="++skies; 046 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_exr16.zip" title="++skies; 046 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_exr8.zip" title="++skies; 046 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_png16.zip" title="++skies; 046 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_png8.zip" title="++skies; 046 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_mmd16.zip" title="++skies; 046 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_046_mmd8.zip" title="++skies; 046 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_045.jpg" alt="++skies; 045" width=400 height=200><br>
-            Sunlight Elevation: -0.80 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_hdr16.zip" title="++skies; 045 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_hdr8.zip" title="++skies; 045 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_exr16.zip" title="++skies; 045 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_exr8.zip" title="++skies; 045 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_png16.zip" title="++skies; 045 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_png8.zip" title="++skies; 045 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_mmd16.zip" title="++skies; 045 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_mmd8.zip" title="++skies; 045 mmd8 package">MMD8</a><br>
-          </div>
+          <article class="sample-card" data-sun="-0.80" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_045.jpg" alt="++skies; 045" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 045</span>
+              <span class="sample-card__sun">☀ -0.80°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_hdr16.zip" title="++skies; 045 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_hdr8.zip" title="++skies; 045 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_exr16.zip" title="++skies; 045 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_exr8.zip" title="++skies; 045 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_png16.zip" title="++skies; 045 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_png8.zip" title="++skies; 045 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_mmd16.zip" title="++skies; 045 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_045_mmd8.zip" title="++skies; 045 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_044.jpg" alt="++skies; 044" width=400 height=300><br>
-            Sunlight Elevation: -3.24 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_hdr16.zip" title="++skies; 044 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_hdr8.zip" title="++skies; 044 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_exr16.zip" title="++skies; 044 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_exr8.zip" title="++skies; 044 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_png16.zip" title="++skies; 044 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_png8.zip" title="++skies; 044 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_mmd16.zip" title="++skies; 044 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_mmd8.zip" title="++skies; 044 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-3.24" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_044.jpg" alt="++skies; 044" width=400 height=300>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 044</span>
+              <span class="sample-card__sun">☀ -3.24°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_hdr16.zip" title="++skies; 044 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_hdr8.zip" title="++skies; 044 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_exr16.zip" title="++skies; 044 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_exr8.zip" title="++skies; 044 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_png16.zip" title="++skies; 044 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_png8.zip" title="++skies; 044 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_mmd16.zip" title="++skies; 044 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_044_mmd8.zip" title="++skies; 044 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_043.jpg" alt="++skies; 043" width=400 height=300><br>
-            Sunlight Elevation: +58.5 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_hdr16.zip" title="++skies; 043 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_hdr8.zip" title="++skies; 043 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_exr16.zip" title="++skies; 043 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_exr8.zip" title="++skies; 043 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_png16.zip" title="++skies; 043 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_png8.zip" title="++skies; 043 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_mmd16.zip" title="++skies; 043 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_mmd8.zip" title="++skies; 043 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+58.5" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_043.jpg" alt="++skies; 043" width=400 height=300>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 043</span>
+              <span class="sample-card__sun">☀ +58.5°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_hdr16.zip" title="++skies; 043 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_hdr8.zip" title="++skies; 043 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_exr16.zip" title="++skies; 043 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_exr8.zip" title="++skies; 043 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_png16.zip" title="++skies; 043 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_png8.zip" title="++skies; 043 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_mmd16.zip" title="++skies; 043 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_043_mmd8.zip" title="++skies; 043 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_042.jpg" alt="++skies; 042" width=400 height=300><br>
-            Sunlight Elevation: -1.60 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_hdr16.zip" title="++skies; 042 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_hdr8.zip" title="++skies; 042 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_exr16.zip" title="++skies; 042 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_exr8.zip" title="++skies; 042 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_png16.zip" title="++skies; 042 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_png8.zip" title="++skies; 042 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_mmd16.zip" title="++skies; 042 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_mmd8.zip" title="++skies; 042 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-1.60" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_042.jpg" alt="++skies; 042" width=400 height=300>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 042</span>
+              <span class="sample-card__sun">☀ -1.60°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_hdr16.zip" title="++skies; 042 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_hdr8.zip" title="++skies; 042 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_exr16.zip" title="++skies; 042 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_exr8.zip" title="++skies; 042 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_png16.zip" title="++skies; 042 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_png8.zip" title="++skies; 042 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_mmd16.zip" title="++skies; 042 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_042_mmd8.zip" title="++skies; 042 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_041.jpg" alt="++skies; 041" width=400 height=300><br>
-            Sunlight Elevation: +2.50 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_hdr16.zip" title="++skies; 041 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_hdr8.zip" title="++skies; 041 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_exr16.zip" title="++skies; 041 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_exr8.zip" title="++skies; 041 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_png16.zip" title="++skies; 041 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_png8.zip" title="++skies; 041 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_mmd16.zip" title="++skies; 041 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_mmd8.zip" title="++skies; 041 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+2.50" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_041.jpg" alt="++skies; 041" width=400 height=300>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 041</span>
+              <span class="sample-card__sun">☀ +2.50°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_hdr16.zip" title="++skies; 041 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_hdr8.zip" title="++skies; 041 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_exr16.zip" title="++skies; 041 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_exr8.zip" title="++skies; 041 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_png16.zip" title="++skies; 041 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_png8.zip" title="++skies; 041 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_mmd16.zip" title="++skies; 041 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_041_mmd8.zip" title="++skies; 041 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_040.jpg" alt="++skies; 040A" width=400 height=300><br>
-            Sunlight Elevation: -0.67 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr32.zip" title="++skies; 040A hdr32 package">HDR32</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr24.zip" title="++skies; 040A hdr24 package">HDR24</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr20.zip" title="++skies; 040A hdr20 package">HDR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr16.zip" title="++skies; 040A hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr8.zip" title="++skies; 040A hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr32.zip" title="++skies; 040A exr32 package">EXR32</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr24.zip" title="++skies; 040A exr24 package">EXR24</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr20.zip" title="++skies; 040A exr20 package">EXR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr16.zip" title="++skies; 040A exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr8.zip" title="++skies; 040A exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png32.zip" title="++skies; 040A png32 package">PNG32</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png24.zip" title="++skies; 040A png24 package">PNG24</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png20.zip" title="++skies; 040A png20 package">PNG20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png16.zip" title="++skies; 040A png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png8.zip" title="++skies; 040A png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd32.zip" title="++skies; 040A mmd32 package">MMD32</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd24.zip" title="++skies; 040A mmd24 package">MMD24</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd20.zip" title="++skies; 040A mmd20 package">MMD20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd16.zip" title="++skies; 040A mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd8.zip" title="++skies; 040A mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-0.67" data-formats="hdr32 hdr24 hdr20 hdr16 hdr8 exr32 exr24 exr20 exr16 exr8 png32 png24 png20 png16 png8 mmd32 mmd24 mmd20 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_040.jpg" alt="++skies; 040A" width=400 height=300>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 040A</span>
+              <span class="sample-card__sun">☀ -0.67°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr32.zip" title="++skies; 040A HDR32 package">32k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr24.zip" title="++skies; 040A HDR24 package">24k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr20.zip" title="++skies; 040A HDR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr16.zip" title="++skies; 040A HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_hdr8.zip" title="++skies; 040A HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr32.zip" title="++skies; 040A EXR32 package">32k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr24.zip" title="++skies; 040A EXR24 package">24k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr20.zip" title="++skies; 040A EXR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr16.zip" title="++skies; 040A EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_exr8.zip" title="++skies; 040A EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png32.zip" title="++skies; 040A PNG32 package">32k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png24.zip" title="++skies; 040A PNG24 package">24k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png20.zip" title="++skies; 040A PNG20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png16.zip" title="++skies; 040A PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_png8.zip" title="++skies; 040A PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd32.zip" title="++skies; 040A MMD32 package">32k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd24.zip" title="++skies; 040A MMD24 package">24k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd20.zip" title="++skies; 040A MMD20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd16.zip" title="++skies; 040A MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_040A_mmd8.zip" title="++skies; 040A MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_039.jpg" alt="++skies; 039" width=400 height=300><br>
-            Sunlight Elevation: +8.00 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_hdr16.zip" title="++skies; 039 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_hdr8.zip" title="++skies; 039 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_exr16.zip" title="++skies; 039 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_exr8.zip" title="++skies; 039 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_png16.zip" title="++skies; 039 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_png8.zip" title="++skies; 039 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_mmd16.zip" title="++skies; 039 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_mmd8.zip" title="++skies; 039 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+8.00" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_039.jpg" alt="++skies; 039" width=400 height=300>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 039</span>
+              <span class="sample-card__sun">☀ +8.00°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_hdr16.zip" title="++skies; 039 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_hdr8.zip" title="++skies; 039 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_exr16.zip" title="++skies; 039 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_exr8.zip" title="++skies; 039 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_png16.zip" title="++skies; 039 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_png8.zip" title="++skies; 039 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_mmd16.zip" title="++skies; 039 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_039_mmd8.zip" title="++skies; 039 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_038.jpg" alt="++skies; 038" width=400 height=267><br>
-            Sunlight Elevation: +11.30 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_hdr16.zip" title="++skies; 038 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_hdr8.zip" title="++skies; 038 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_exr16.zip" title="++skies; 038 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_exr8.zip" title="++skies; 038 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_png16.zip" title="++skies; 038 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_png8.zip" title="++skies; 038 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_mmd16.zip" title="++skies; 038 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_mmd8.zip" title="++skies; 038 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+11.30" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_038.jpg" alt="++skies; 038" width=400 height=267>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 038</span>
+              <span class="sample-card__sun">☀ +11.30°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_hdr16.zip" title="++skies; 038 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_hdr8.zip" title="++skies; 038 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_exr16.zip" title="++skies; 038 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_exr8.zip" title="++skies; 038 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_png16.zip" title="++skies; 038 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_png8.zip" title="++skies; 038 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_mmd16.zip" title="++skies; 038 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_038_mmd8.zip" title="++skies; 038 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_037.jpg" alt="++skies; 037" width=400 height=200><br>
-            Sunlight Elevation: +3.24 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_hdr16.zip" title="++skies; 037 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_hdr8.zip" title="++skies; 037 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_exr16.zip" title="++skies; 037 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_exr8.zip" title="++skies; 037 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_png16.zip" title="++skies; 037 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_png8.zip" title="++skies; 037 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_mmd16.zip" title="++skies; 037 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_mmd8.zip" title="++skies; 037 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+3.24" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_037.jpg" alt="++skies; 037" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 037</span>
+              <span class="sample-card__sun">☀ +3.24°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_hdr16.zip" title="++skies; 037 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_hdr8.zip" title="++skies; 037 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_exr16.zip" title="++skies; 037 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_exr8.zip" title="++skies; 037 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_png16.zip" title="++skies; 037 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_png8.zip" title="++skies; 037 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_mmd16.zip" title="++skies; 037 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_037_mmd8.zip" title="++skies; 037 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_036.jpg" alt="++skies; 036" width=400 height=200><br>
-            Sunlight Elevation: -6.00 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_hdr16.zip" title="++skies; 036 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_hdr8.zip" title="++skies; 036 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_exr16.zip" title="++skies; 036 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_exr8.zip" title="++skies; 036 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_png16.zip" title="++skies; 036 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_png8.zip" title="++skies; 036 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_mmd16.zip" title="++skies; 036 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_mmd8.zip" title="++skies; 036 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-6.00" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_036.jpg" alt="++skies; 036" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 036</span>
+              <span class="sample-card__sun">☀ -6.00°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_hdr16.zip" title="++skies; 036 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_hdr8.zip" title="++skies; 036 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_exr16.zip" title="++skies; 036 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_exr8.zip" title="++skies; 036 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_png16.zip" title="++skies; 036 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_png8.zip" title="++skies; 036 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_mmd16.zip" title="++skies; 036 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_036_mmd8.zip" title="++skies; 036 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_035.jpg" alt="++skies; 035" width=400 height=200><br>
-            Sunlight Elevation: +0.32 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_hdr16.zip" title="++skies; 035 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_hdr8.zip" title="++skies; 035 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_exr16.zip" title="++skies; 035 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_exr8.zip" title="++skies; 035 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_png16.zip" title="++skies; 035 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_png8.zip" title="++skies; 035 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_mmd16.zip" title="++skies; 035 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_mmd8.zip" title="++skies; 035 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+0.32" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_035.jpg" alt="++skies; 035" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 035</span>
+              <span class="sample-card__sun">☀ +0.32°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_hdr16.zip" title="++skies; 035 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_hdr8.zip" title="++skies; 035 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_exr16.zip" title="++skies; 035 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_exr8.zip" title="++skies; 035 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_png16.zip" title="++skies; 035 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_png8.zip" title="++skies; 035 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_mmd16.zip" title="++skies; 035 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_035_mmd8.zip" title="++skies; 035 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_034.jpg" alt="++skies; 034" width=400 height=200><br>
-            Sunlight Elevation: -5.50 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_hdr16.zip" title="++skies; 034 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_hdr8.zip" title="++skies; 034 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_exr16.zip" title="++skies; 034 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_exr8.zip" title="++skies; 034 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_png16.zip" title="++skies; 034 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_png8.zip" title="++skies; 034 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_mmd16.zip" title="++skies; 034 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_mmd8.zip" title="++skies; 034 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-5.50" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_034.jpg" alt="++skies; 034" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 034</span>
+              <span class="sample-card__sun">☀ -5.50°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_hdr16.zip" title="++skies; 034 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_hdr8.zip" title="++skies; 034 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_exr16.zip" title="++skies; 034 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_exr8.zip" title="++skies; 034 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_png16.zip" title="++skies; 034 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_png8.zip" title="++skies; 034 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_mmd16.zip" title="++skies; 034 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_034_mmd8.zip" title="++skies; 034 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_033.jpg" alt="++skies; 033" width=400 height=200><br>
-            Sunlight Elevation: +4.90 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_hdr16.zip" title="++skies; 033 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_hdr8.zip" title="++skies; 033 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_exr16.zip" title="++skies; 033 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_exr8.zip" title="++skies; 033 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_png16.zip" title="++skies; 033 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_png8.zip" title="++skies; 033 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_mmd16.zip" title="++skies; 033 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_mmd8.zip" title="++skies; 033 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+4.90" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_033.jpg" alt="++skies; 033" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 033</span>
+              <span class="sample-card__sun">☀ +4.90°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_hdr16.zip" title="++skies; 033 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_hdr8.zip" title="++skies; 033 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_exr16.zip" title="++skies; 033 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_exr8.zip" title="++skies; 033 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_png16.zip" title="++skies; 033 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_png8.zip" title="++skies; 033 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_mmd16.zip" title="++skies; 033 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_033_mmd8.zip" title="++skies; 033 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_032.jpg" alt="++skies; 032" width=400 height=200><br>
-            Sunlight Elevation: -2.70 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_hdr16.zip" title="++skies; 032 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_hdr8.zip" title="++skies; 032 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_exr16.zip" title="++skies; 032 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_exr8.zip" title="++skies; 032 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_png16.zip" title="++skies; 032 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_png8.zip" title="++skies; 032 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_mmd16.zip" title="++skies; 032 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_mmd8.zip" title="++skies; 032 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-2.70" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_032.jpg" alt="++skies; 032" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 032</span>
+              <span class="sample-card__sun">☀ -2.70°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_hdr16.zip" title="++skies; 032 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_hdr8.zip" title="++skies; 032 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_exr16.zip" title="++skies; 032 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_exr8.zip" title="++skies; 032 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_png16.zip" title="++skies; 032 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_png8.zip" title="++skies; 032 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_mmd16.zip" title="++skies; 032 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_032_mmd8.zip" title="++skies; 032 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_031.jpg" alt="++skies; 031" width=400 height=200><br>
-            Sunlight Elevation: -5.50 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_hdr16.zip" title="++skies; 031 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_hdr8.zip" title="++skies; 031 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_exr16.zip" title="++skies; 031 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_exr8.zip" title="++skies; 031 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_png16.zip" title="++skies; 031 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_png8.zip" title="++skies; 031 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_mmd16.zip" title="++skies; 031 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_mmd8.zip" title="++skies; 031 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-5.50" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_031.jpg" alt="++skies; 031" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 031</span>
+              <span class="sample-card__sun">☀ -5.50°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_hdr16.zip" title="++skies; 031 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_hdr8.zip" title="++skies; 031 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_exr16.zip" title="++skies; 031 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_exr8.zip" title="++skies; 031 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_png16.zip" title="++skies; 031 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_png8.zip" title="++skies; 031 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_mmd16.zip" title="++skies; 031 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_031_mmd8.zip" title="++skies; 031 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_030.jpg" alt="++skies; 030" width=400 height=200><br>
-            Sunlight Elevation: +3.00 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_hdr16.zip" title="++skies; 030 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_hdr8.zip" title="++skies; 030 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_exr16.zip" title="++skies; 030 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_exr8.zip" title="++skies; 030 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_png16.zip" title="++skies; 030 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_png8.zip" title="++skies; 030 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_mmd16.zip" title="++skies; 030 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_mmd8.zip" title="++skies; 030 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+3.00" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_030.jpg" alt="++skies; 030" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 030</span>
+              <span class="sample-card__sun">☀ +3.00°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_hdr16.zip" title="++skies; 030 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_hdr8.zip" title="++skies; 030 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_exr16.zip" title="++skies; 030 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_exr8.zip" title="++skies; 030 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_png16.zip" title="++skies; 030 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_png8.zip" title="++skies; 030 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_mmd16.zip" title="++skies; 030 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_030_mmd8.zip" title="++skies; 030 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_029.jpg" alt="++skies; 029" width=400 height=200><br>
-            Sunlight Elevation: -0.24 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_hdr16.zip" title="++skies; 029 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_hdr8.zip" title="++skies; 029 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_exr16.zip" title="++skies; 029 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_exr8.zip" title="++skies; 029 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_png16.zip" title="++skies; 029 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_png8.zip" title="++skies; 029 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_mmd16.zip" title="++skies; 029 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_mmd8.zip" title="++skies; 029 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-0.24" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_029.jpg" alt="++skies; 029" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 029</span>
+              <span class="sample-card__sun">☀ -0.24°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_hdr16.zip" title="++skies; 029 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_hdr8.zip" title="++skies; 029 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_exr16.zip" title="++skies; 029 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_exr8.zip" title="++skies; 029 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_png16.zip" title="++skies; 029 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_png8.zip" title="++skies; 029 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_mmd16.zip" title="++skies; 029 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_029_mmd8.zip" title="++skies; 029 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_028.jpg" alt="++skies; 028" width=400 height=200><br>
-            Sunlight Elevation: +4.62 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_hdr16.zip" title="++skies; 028 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_hdr8.zip" title="++skies; 028 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_exr16.zip" title="++skies; 028 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_exr8.zip" title="++skies; 028 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_png16.zip" title="++skies; 028 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_png8.zip" title="++skies; 028 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_mmd16.zip" title="++skies; 028 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_mmd8.zip" title="++skies; 028 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+4.62" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_028.jpg" alt="++skies; 028" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 028</span>
+              <span class="sample-card__sun">☀ +4.62°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_hdr16.zip" title="++skies; 028 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_hdr8.zip" title="++skies; 028 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_exr16.zip" title="++skies; 028 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_exr8.zip" title="++skies; 028 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_png16.zip" title="++skies; 028 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_png8.zip" title="++skies; 028 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_mmd16.zip" title="++skies; 028 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_028_mmd8.zip" title="++skies; 028 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_027.jpg" alt="++skies; 027" width=400 height=200><br>
-            Sunlight Elevation: +0.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_hdr16.zip" title="++skies; 027 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_hdr8.zip" title="++skies; 027 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_exr16.zip" title="++skies; 027 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_exr8.zip" title="++skies; 027 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_png16.zip" title="++skies; 027 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_png8.zip" title="++skies; 027 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_mmd16.zip" title="++skies; 027 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_mmd8.zip" title="++skies; 027 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+0.0" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_027.jpg" alt="++skies; 027" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 027</span>
+              <span class="sample-card__sun">☀ +0.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_hdr16.zip" title="++skies; 027 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_hdr8.zip" title="++skies; 027 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_exr16.zip" title="++skies; 027 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_exr8.zip" title="++skies; 027 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_png16.zip" title="++skies; 027 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_png8.zip" title="++skies; 027 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_mmd16.zip" title="++skies; 027 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_027_mmd8.zip" title="++skies; 027 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_026.jpg" alt="++skies; 026" width=400 height=200><br>
-            Sunlight Elevation: +7.3 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_hdr16.zip" title="++skies; 026 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_hdr8.zip" title="++skies; 026 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_exr16.zip" title="++skies; 026 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_exr8.zip" title="++skies; 026 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_png16.zip" title="++skies; 026 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_png8.zip" title="++skies; 026 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_mmd16.zip" title="++skies; 026 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_mmd8.zip" title="++skies; 026 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+7.3" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_026.jpg" alt="++skies; 026" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 026</span>
+              <span class="sample-card__sun">☀ +7.3°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_hdr16.zip" title="++skies; 026 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_hdr8.zip" title="++skies; 026 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_exr16.zip" title="++skies; 026 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_exr8.zip" title="++skies; 026 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_png16.zip" title="++skies; 026 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_png8.zip" title="++skies; 026 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_mmd16.zip" title="++skies; 026 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_026_mmd8.zip" title="++skies; 026 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_025.jpg" alt="++skies; 025" width=400 height=200><br>
-            Sunlight Elevation: +6.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_hdr16.zip" title="++skies; 025 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_hdr8.zip" title="++skies; 025 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_exr16.zip" title="++skies; 025 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_exr8.zip" title="++skies; 025 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_png16.zip" title="++skies; 025 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_png8.zip" title="++skies; 025 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_mmd16.zip" title="++skies; 025 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_mmd8.zip" title="++skies; 025 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+6.0" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_025.jpg" alt="++skies; 025" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 025</span>
+              <span class="sample-card__sun">☀ +6.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_hdr16.zip" title="++skies; 025 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_hdr8.zip" title="++skies; 025 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_exr16.zip" title="++skies; 025 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_exr8.zip" title="++skies; 025 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_png16.zip" title="++skies; 025 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_png8.zip" title="++skies; 025 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_mmd16.zip" title="++skies; 025 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_025_mmd8.zip" title="++skies; 025 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_024.jpg" alt="++skies; 024" width=400 height=200><br>
-            Sunlight Elevation: +40.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_hdr16.zip" title="++skies; 024 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_hdr8.zip" title="++skies; 024 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_exr16.zip" title="++skies; 024 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_exr8.zip" title="++skies; 024 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_png16.zip" title="++skies; 024 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_png8.zip" title="++skies; 024 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_mmd16.zip" title="++skies; 024 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_mmd8.zip" title="++skies; 024 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+40.0" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_024.jpg" alt="++skies; 024" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 024</span>
+              <span class="sample-card__sun">☀ +40.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_hdr16.zip" title="++skies; 024 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_hdr8.zip" title="++skies; 024 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_exr16.zip" title="++skies; 024 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_exr8.zip" title="++skies; 024 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_png16.zip" title="++skies; 024 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_png8.zip" title="++skies; 024 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_mmd16.zip" title="++skies; 024 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_024_mmd8.zip" title="++skies; 024 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_023.jpg" alt="++skies; 023" width=400 height=200><br>
-            Sunlight Elevation: 0.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_hdr16.zip" title="++skies; 023 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_hdr8.zip" title="++skies; 023 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_exr16.zip" title="++skies; 023 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_exr8.zip" title="++skies; 023 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_png16.zip" title="++skies; 023 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_png8.zip" title="++skies; 023 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_mmd16.zip" title="++skies; 023 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_mmd8.zip" title="++skies; 023 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="0.0" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_023.jpg" alt="++skies; 023" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 023</span>
+              <span class="sample-card__sun">☀ 0.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_hdr16.zip" title="++skies; 023 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_hdr8.zip" title="++skies; 023 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_exr16.zip" title="++skies; 023 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_exr8.zip" title="++skies; 023 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_png16.zip" title="++skies; 023 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_png8.zip" title="++skies; 023 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_mmd16.zip" title="++skies; 023 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_023_mmd8.zip" title="++skies; 023 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_022.jpg" alt="++skies; 022" width=400 height=200><br>
-            Sunlight Elevation: +2.75 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_hdr16.zip" title="++skies; 022 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_hdr8.zip" title="++skies; 022 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_exr16.zip" title="++skies; 022 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_exr8.zip" title="++skies; 022 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_png16.zip" title="++skies; 022 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_png8.zip" title="++skies; 022 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_mmd16.zip" title="++skies; 022 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_mmd8.zip" title="++skies; 022 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+2.75" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_022.jpg" alt="++skies; 022" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 022</span>
+              <span class="sample-card__sun">☀ +2.75°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_hdr16.zip" title="++skies; 022 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_hdr8.zip" title="++skies; 022 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_exr16.zip" title="++skies; 022 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_exr8.zip" title="++skies; 022 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_png16.zip" title="++skies; 022 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_png8.zip" title="++skies; 022 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_mmd16.zip" title="++skies; 022 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_022_mmd8.zip" title="++skies; 022 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_021.jpg" alt="++skies; 021" width=400 height=200><br>
-            Sunlight Elevation: -2.5 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_hdr16.zip" title="++skies; 021 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_hdr8.zip" title="++skies; 021 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_exr16.zip" title="++skies; 021 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_exr8.zip" title="++skies; 021 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_png16.zip" title="++skies; 021 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_png8.zip" title="++skies; 021 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_mmd16.zip" title="++skies; 021 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_mmd8.zip" title="++skies; 021 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-2.5" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_021.jpg" alt="++skies; 021" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 021</span>
+              <span class="sample-card__sun">☀ -2.5°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_hdr16.zip" title="++skies; 021 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_hdr8.zip" title="++skies; 021 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_exr16.zip" title="++skies; 021 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_exr8.zip" title="++skies; 021 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_png16.zip" title="++skies; 021 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_png8.zip" title="++skies; 021 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_mmd16.zip" title="++skies; 021 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_021_mmd8.zip" title="++skies; 021 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_020.jpg" alt="++skies; 020" width=400 height=200><br>
-            Sunlight Elevation: +2.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_hdr24.zip" title="++skies; 020 hdr24 package">HDR24</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_hdr20.zip" title="++skies; 020 hdr20 package">HDR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_hdr16.zip" title="++skies; 020 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_hdr8.zip" title="++skies; 020 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_exr24.zip" title="++skies; 020 exr24 package">EXR24</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_exr20.zip" title="++skies; 020 exr20 package">EXR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_exr16.zip" title="++skies; 020 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_exr8.zip" title="++skies; 020 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_png24.zip" title="++skies; 020 png24 package">PNG24</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_png20.zip" title="++skies; 020 png20 package">PNG20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_png16.zip" title="++skies; 020 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_png8.zip" title="++skies; 020 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_mmd24.zip" title="++skies; 020 mmd24 package">MMD24</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_mmd20.zip" title="++skies; 020 mmd20 package">MMD20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_mmd16.zip" title="++skies; 020 mmd16 package">MMD16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_mmd8.zip" title="++skies; 020 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+2.0" data-formats="hdr24 hdr20 hdr16 hdr8 exr24 exr20 exr16 exr8 png24 png20 png16 png8 mmd24 mmd20 mmd16 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_020.jpg" alt="++skies; 020" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 020</span>
+              <span class="sample-card__sun">☀ +2.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_hdr24.zip" title="++skies; 020 HDR24 package">24k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_hdr20.zip" title="++skies; 020 HDR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_hdr16.zip" title="++skies; 020 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_hdr8.zip" title="++skies; 020 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_exr24.zip" title="++skies; 020 EXR24 package">24k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_exr20.zip" title="++skies; 020 EXR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_exr16.zip" title="++skies; 020 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_exr8.zip" title="++skies; 020 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_png24.zip" title="++skies; 020 PNG24 package">24k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_png20.zip" title="++skies; 020 PNG20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_png16.zip" title="++skies; 020 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_png8.zip" title="++skies; 020 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_mmd24.zip" title="++skies; 020 MMD24 package">24k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_mmd20.zip" title="++skies; 020 MMD20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_mmd16.zip" title="++skies; 020 MMD16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_020_mmd8.zip" title="++skies; 020 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_019.jpg" alt="++skies; 019" width=400 height=200><br>
-            Sunlight Elevation: +2.7 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_hdr16.zip" title="++skies; 019 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_hdr8.zip" title="++skies; 019 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_exr16.zip" title="++skies; 019 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_exr8.zip" title="++skies; 019 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_png16.zip" title="++skies; 019 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_png8.zip" title="++skies; 019 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_mmd8.zip" title="++skies; 019 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+2.7" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_019.jpg" alt="++skies; 019" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 019</span>
+              <span class="sample-card__sun">☀ +2.7°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_hdr16.zip" title="++skies; 019 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_hdr8.zip" title="++skies; 019 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_exr16.zip" title="++skies; 019 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_exr8.zip" title="++skies; 019 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_png16.zip" title="++skies; 019 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_png8.zip" title="++skies; 019 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_019_mmd8.zip" title="++skies; 019 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_018.jpg" alt="++skies; 018" width=400 height=200><br>
-            Sunlight Elevation: +13.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_hdr16.zip" title="++skies; 018 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_hdr8.zip" title="++skies; 018 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_exr16.zip" title="++skies; 018 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_exr8.zip" title="++skies; 018 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_png16.zip" title="++skies; 018 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_png8.zip" title="++skies; 018 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_mmd8.zip" title="++skies; 018 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+13.0" data-formats="hdr16 hdr8 exr16 exr8 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_018.jpg" alt="++skies; 018" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 018</span>
+              <span class="sample-card__sun">☀ +13.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_hdr16.zip" title="++skies; 018 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_hdr8.zip" title="++skies; 018 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_exr16.zip" title="++skies; 018 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_exr8.zip" title="++skies; 018 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_png16.zip" title="++skies; 018 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_png8.zip" title="++skies; 018 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_018_mmd8.zip" title="++skies; 018 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_017.jpg" alt="++skies; 017" width=400 height=200><br>
-            Sunlight Elevation: +4.5 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_hdr20.zip" title="++skies; 017 hdr20 package">HDR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_hdr16.zip" title="++skies; 017 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_hdr8.zip" title="++skies; 017 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_exr20.zip" title="++skies; 017 exr20 package">EXR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_exr16.zip" title="++skies; 017 exr16 package">EXR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_exr8.zip" title="++skies; 017 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_png20.zip" title="++skies; 017 png20 package">PNG20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_png16.zip" title="++skies; 017 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_png8.zip" title="++skies; 017 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_mmd8.zip" title="++skies; 017 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+4.5" data-formats="hdr20 hdr16 hdr8 exr20 exr16 exr8 png20 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_017.jpg" alt="++skies; 017" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 017</span>
+              <span class="sample-card__sun">☀ +4.5°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_hdr20.zip" title="++skies; 017 HDR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_hdr16.zip" title="++skies; 017 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_hdr8.zip" title="++skies; 017 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_exr20.zip" title="++skies; 017 EXR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_exr16.zip" title="++skies; 017 EXR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_exr8.zip" title="++skies; 017 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_png20.zip" title="++skies; 017 PNG20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_png16.zip" title="++skies; 017 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_png8.zip" title="++skies; 017 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_017_mmd8.zip" title="++skies; 017 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_016.jpg" alt="++skies; 016" width=400 height=200><br>
-            Sunlight Elevation: +5.9 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_hdr16.zip" title="++skies; 016 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_exr16.zip" title="++skies; 016 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_png16.zip" title="++skies; 016 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_png8.zip" title="++skies; 016 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_mmd8.zip" title="++skies; 016 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+5.9" data-formats="hdr16 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_016.jpg" alt="++skies; 016" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 016</span>
+              <span class="sample-card__sun">☀ +5.9°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_hdr16.zip" title="++skies; 016 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_exr16.zip" title="++skies; 016 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_png16.zip" title="++skies; 016 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_png8.zip" title="++skies; 016 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_016_mmd8.zip" title="++skies; 016 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_015.jpg" alt="++skies; 015" width=400 height=200><br>
-            Sunlight Elevation: +1.8 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_hdr20.zip" title="++skies; 015 hdr20 package">HDR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_hdr16.zip" title="++skies; 015 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_exr20.zip" title="++skies; 015 exr20 package">EXR20</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_exr16.zip" title="++skies; 015 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_png8.zip" title="++skies; 015 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_mmd8.zip" title="++skies; 015 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+1.8" data-formats="hdr20 hdr16 exr20 exr16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_015.jpg" alt="++skies; 015" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 015</span>
+              <span class="sample-card__sun">☀ +1.8°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_hdr20.zip" title="++skies; 015 HDR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_hdr16.zip" title="++skies; 015 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_exr20.zip" title="++skies; 015 EXR20 package">20k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_exr16.zip" title="++skies; 015 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_png8.zip" title="++skies; 015 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_015_mmd8.zip" title="++skies; 015 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_014.jpg" alt="++skies; 014" width=400 height=200><br>
-            Sunlight Elevation: +65.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_hdr16.zip" title="++skies; 014 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_exr16.zip" title="++skies; 014 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_png16.zip" title="++skies; 014 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_png8.zip" title="++skies; 014 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_mmd8.zip" title="++skies; 014 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+65.0" data-formats="hdr16 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_014.jpg" alt="++skies; 014" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 014</span>
+              <span class="sample-card__sun">☀ +65.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_hdr16.zip" title="++skies; 014 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_exr16.zip" title="++skies; 014 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_png16.zip" title="++skies; 014 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_png8.zip" title="++skies; 014 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_014_mmd8.zip" title="++skies; 014 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_013.jpg" alt="++skies; 013" width=400 height=200><br>
-            Sunlight Elevation: -6.07 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_hdr16.zip" title="++skies; 013 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_exr16.zip" title="++skies; 013 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_png16.zip" title="++skies; 013 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_png8.zip" title="++skies; 013 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_mmd8.zip" title="++skies; 013 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-6.07" data-formats="hdr16 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_013.jpg" alt="++skies; 013" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 013</span>
+              <span class="sample-card__sun">☀ -6.07°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_hdr16.zip" title="++skies; 013 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_exr16.zip" title="++skies; 013 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_png16.zip" title="++skies; 013 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_png8.zip" title="++skies; 013 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_013_mmd8.zip" title="++skies; 013 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_012.jpg" alt="++skies; 012" width=400 height=200><br>
-            Sunlight Elevation: +8.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_hdr16.zip" title="++skies; 012 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_exr16.zip" title="++skies; 012 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_png16.zip" title="++skies; 012 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_png8.zip" title="++skies; 012 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_mmd8.zip" title="++skies; 012 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+8.0" data-formats="hdr16 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_012.jpg" alt="++skies; 012" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 012</span>
+              <span class="sample-card__sun">☀ +8.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_hdr16.zip" title="++skies; 012 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_exr16.zip" title="++skies; 012 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_png16.zip" title="++skies; 012 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_png8.zip" title="++skies; 012 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_012_mmd8.zip" title="++skies; 012 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_011.jpg" alt="++skies; 011" width=400 height=200><br>
-            Sunlight Elevation: -1.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_hdr16.zip" title="++skies; 011 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_hdr8.zip" title="++skies; 011 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_exr16.zip" title="++skies; 011 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_png16.zip" title="++skies; 011 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_png8.zip" title="++skies; 011 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_mmd8.zip" title="++skies; 011 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-1.0" data-formats="hdr16 hdr8 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_011.jpg" alt="++skies; 011" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 011</span>
+              <span class="sample-card__sun">☀ -1.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_hdr16.zip" title="++skies; 011 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_hdr8.zip" title="++skies; 011 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_exr16.zip" title="++skies; 011 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_png16.zip" title="++skies; 011 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_png8.zip" title="++skies; 011 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_011_mmd8.zip" title="++skies; 011 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_010.jpg" alt="++skies; 010" width=400 height=200><br>
-            Sunlight Elevation: +45.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_hdr16.zip" title="++skies; 010 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_exr16.zip" title="++skies; 010 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_png16.zip" title="++skies; 010 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_png8.zip" title="++skies; 010 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_mmd8.zip" title="++skies; 010 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+45.0" data-formats="hdr16 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_010.jpg" alt="++skies; 010" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 010</span>
+              <span class="sample-card__sun">☀ +45.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_hdr16.zip" title="++skies; 010 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_exr16.zip" title="++skies; 010 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_png16.zip" title="++skies; 010 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_png8.zip" title="++skies; 010 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_010_mmd8.zip" title="++skies; 010 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_009.jpg" alt="++skies; 009" width=400 height=200><br>
-            Sunlight Elevation: +30.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_hdr16.zip" title="++skies; 009 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_exr16.zip" title="++skies; 009 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_png16.zip" title="++skies; 009 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_png8.zip" title="++skies; 009 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_mmd8.zip" title="++skies; 009 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+30.0" data-formats="hdr16 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_009.jpg" alt="++skies; 009" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 009</span>
+              <span class="sample-card__sun">☀ +30.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_hdr16.zip" title="++skies; 009 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_exr16.zip" title="++skies; 009 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_png16.zip" title="++skies; 009 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_png8.zip" title="++skies; 009 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_009_mmd8.zip" title="++skies; 009 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_008.jpg" alt="++skies; 008" width=400 height=200><br>
-            Sunlight Elevation: +7.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_hdr16.zip" title="++skies; 008 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_hdr8.zip" title="++skies; 008 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_exr16.zip" title="++skies; 008 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_png16.zip" title="++skies; 008 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_png8.zip" title="++skies; 008 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_mmd8.zip" title="++skies; 008 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+7.0" data-formats="hdr16 hdr8 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_008.jpg" alt="++skies; 008" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 008</span>
+              <span class="sample-card__sun">☀ +7.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_hdr16.zip" title="++skies; 008 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_hdr8.zip" title="++skies; 008 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_exr16.zip" title="++skies; 008 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_png16.zip" title="++skies; 008 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_png8.zip" title="++skies; 008 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_008_mmd8.zip" title="++skies; 008 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_007.jpg" alt="++skies; 007" width=400 height=200><br>
-            Sunlight Elevation: +7.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_hdr16.zip" title="++skies; 007 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_hdr8.zip" title="++skies; 007 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_exr16.zip" title="++skies; 007 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_png16.zip" title="++skies; 007 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_png8.zip" title="++skies; 007 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_mmd8.zip" title="++skies; 007 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+7.0" data-formats="hdr16 hdr8 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_007.jpg" alt="++skies; 007" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 007</span>
+              <span class="sample-card__sun">☀ +7.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_hdr16.zip" title="++skies; 007 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_hdr8.zip" title="++skies; 007 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_exr16.zip" title="++skies; 007 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_png16.zip" title="++skies; 007 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_png8.zip" title="++skies; 007 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_007_mmd8.zip" title="++skies; 007 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_006.jpg" alt="++skies; 006" width=400 height=200><br>
-            Sunlight Elevation: +5.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_hdr16.zip" title="++skies; 006 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_exr16.zip" title="++skies; 006 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_png16.zip" title="++skies; 006 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_png8.zip" title="++skies; 006 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_mmd8.zip" title="++skies; 006 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+5.0" data-formats="hdr16 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_006.jpg" alt="++skies; 006" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 006</span>
+              <span class="sample-card__sun">☀ +5.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_hdr16.zip" title="++skies; 006 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_exr16.zip" title="++skies; 006 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_png16.zip" title="++skies; 006 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_png8.zip" title="++skies; 006 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_006_mmd8.zip" title="++skies; 006 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_005.jpg" alt="++skies; 005" width=400 height=200><br>
-            欠番
-          </div>
+          <article class="sample-card sample-card--unavailable" data-sun="" data-formats="" data-series="standard" data-status="missing">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_005.jpg" alt="++skies; 005" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 005</span>
+            </div>
+            <span class="sample-card__status">欠番</span>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_004.jpg" alt="++skies; 004" width=400 height=200><br>
-            Sunlight Elevation: +21.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_hdr16.zip" title="++skies; 004 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_exr16.zip" title="++skies; 004 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_png16.zip" title="++skies; 004 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_png8.zip" title="++skies; 004 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_mmd8.zip" title="++skies; 004 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+21.0" data-formats="hdr16 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_004.jpg" alt="++skies; 004" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 004</span>
+              <span class="sample-card__sun">☀ +21.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_hdr16.zip" title="++skies; 004 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_exr16.zip" title="++skies; 004 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_png16.zip" title="++skies; 004 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_png8.zip" title="++skies; 004 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_004_mmd8.zip" title="++skies; 004 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_003.jpg" alt="++skies; 003" width=400 height=200><br>
-            Sunlight Elevation: +4.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_hdr16.zip" title="++skies; 003 hdr16 package">HDR16</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_exr16.zip" title="++skies; 003 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_png16.zip" title="++skies; 003 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_png8.zip" title="++skies; 003 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_mmd8.zip" title="++skies; 003 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+4.0" data-formats="hdr16 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_003.jpg" alt="++skies; 003" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 003</span>
+              <span class="sample-card__sun">☀ +4.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_hdr16.zip" title="++skies; 003 HDR16 package">16k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_exr16.zip" title="++skies; 003 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_png16.zip" title="++skies; 003 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_png8.zip" title="++skies; 003 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_003_mmd8.zip" title="++skies; 003 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_002.jpg" alt="++skies; 002" width=400 height=200><br>
-            Sunlight Elevation: +20.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_hdr16.zip" title="++skies; 002 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_hdr8.zip" title="++skies; 002 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_exr16.zip" title="++skies; 002 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_png16.zip" title="++skies; 002 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_png8.zip" title="++skies; 002 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_mmd8.zip" title="++skies; 002 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+20.0" data-formats="hdr16 hdr8 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_002.jpg" alt="++skies; 002" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 002</span>
+              <span class="sample-card__sun">☀ +20.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_hdr16.zip" title="++skies; 002 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_hdr8.zip" title="++skies; 002 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_exr16.zip" title="++skies; 002 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_png16.zip" title="++skies; 002 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_png8.zip" title="++skies; 002 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_002_mmd8.zip" title="++skies; 002 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_001.jpg" alt="++skies; 001" width=400 height=200><br>
-            Sunlight Elevation: +4.5 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_hdr16.zip" title="++skies; 001 hdr16 package">HDR16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_hdr8.zip" title="++skies; 001 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_exr16.zip" title="++skies; 001 exr16 package">EXR16</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_png16.zip" title="++skies; 001 png16 package">PNG16</a> /
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_png8.zip" title="++skies; 001 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_mmd8.zip" title="++skies; 001 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="+4.5" data-formats="hdr16 hdr8 exr16 png16 png8 mmd8" data-series="standard">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_001.jpg" alt="++skies; 001" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 001</span>
+              <span class="sample-card__sun">☀ +4.5°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_hdr16.zip" title="++skies; 001 HDR16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_hdr8.zip" title="++skies; 001 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_exr16.zip" title="++skies; 001 EXR16 package">16k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_png16.zip" title="++skies; 001 PNG16 package">16k</a> <a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_png8.zip" title="++skies; 001 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_001_mmd8.zip" title="++skies; 001 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_000.jpg" alt="++skies; 000" width=400 height=200><br>
-            Sunlight Elevation: +1.5 deg<br>
-            一時配布停止
-          </div>
+          <article class="sample-card sample-card--unavailable" data-sun="+1.5" data-formats="" data-series="standard" data-status="paused">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_000.jpg" alt="++skies; 000" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; 000</span>
+              <span class="sample-card__sun">☀ +1.5°</span>
+            </div>
+            <span class="sample-card__status">一時配布停止</span>
+          </article>
         </div>
 
         <h3 id="incskies-e">++skies; E0xx</h3>
@@ -983,44 +1226,63 @@
           ++skies; Eは，通常ナンバリング（++skies; 0XX）とは異なり，試験的に制作したテクスチャです。いつもとは一味違った空をお試しください。なお，試作扱いにつき，通常ナンバリング素材と比較して品質に劣りがある旨ご了承ください。
         </p>
         <div class="img-list-grid">
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_E002.jpg" alt="++skies; E002" width=400 height=200><br>
-            Sunlight Elevation: -1.9 deg<br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E002_png8.zip" title="++skies; E002 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E002_mmd8.zip" title="++skies; E002 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun="-1.9" data-formats="png8 mmd8" data-series="experimental">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_E002.jpg" alt="++skies; E002" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; E002</span>
+              <span class="sample-card__sun">☀ -1.9°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E002_png8.zip" title="++skies; E002 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E002_mmd8.zip" title="++skies; E002 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
 
-          <div>
-            <img loading="lazy" src="./img/samples/incskies_E001.jpg" alt="++skies; E001" width=400 height=200><br>
-            Sunlight Elevation: +23.0/+4.0 deg<br>
-            Radiance:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E001_hdr8.zip" title="++skies; E001 hdr8 package">HDR8</a><br>
-            OpenEXR:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E001_exr8.zip" title="++skies; E001 exr8 package">EXR8</a><br>
-            PNG:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E001_png8.zip" title="++skies; E001 png8 package">PNG8</a><br>
-            PNG+MMD Accessory:
-            <a href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E001_mmd8.zip" title="++skies; E001 mmd8 package">MMD8</a>
-          </div>
+          <article class="sample-card" data-sun-values="+23.0 +4.0" data-sun-min="+4.0" data-sun-max="+23.0" data-formats="hdr8 exr8 png8 mmd8" data-series="experimental">
+            <figure class="sample-card__media">
+              <img loading="lazy" src="./img/samples/incskies_E001.jpg" alt="++skies; E001" width=400 height=200>
+            </figure>
+            <div class="sample-card__head">
+              <span class="sample-card__id">++skies; E001</span>
+              <span class="sample-card__sun">☀ +23.0/+4.0°</span>
+            </div>
+            <dl class="sample-card__formats">
+              <dt>Radiance (.hdr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E001_hdr8.zip" title="++skies; E001 HDR8 package">8k</a></dd>
+              <dt>OpenEXR (.exr)</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E001_exr8.zip" title="++skies; E001 EXR8 package">8k</a></dd>
+              <dt>PNG</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E001_png8.zip" title="++skies; E001 PNG8 package">8k</a></dd>
+              <dt>PNG + MMD</dt>
+              <dd><a class="fmt-chip" href="https://aokcub-public.s3.ap-northeast-3.amazonaws.com/incskies/incskies_E001_mmd8.zip" title="++skies; E001 MMD8 package">8k</a></dd>
+            </dl>
+          </article>
         </div>
       </section>
 
       <section id="contact" class="content-wrapper__item">
         <h2 class="section-title">連絡先</h2>
 
-        <p>
-          aokcub<br>
-          Web: <a href="../">aokcub::Web::CG</a><br>
-          Twitter: <a href="https://twitter.com/aokcub_cg">aokcub_cg</a><br>
-          e-mail: aokcub3055 AT gmail.com<br>
-        </p>
+        <div class="contact-card">
+          <p style="margin-bottom:14px;"><strong>aokcub</strong></p>
+          <dl class="contact-list">
+            <dt>Web</dt>
+            <dd><a href="../">aokcub::Web::CG</a></dd>
+            <dt>Twitter</dt>
+            <dd><a href="https://twitter.com/aokcub_cg">@aokcub_cg</a></dd>
+            <dt>e-mail</dt>
+            <dd>aokcub3055 AT gmail.com</dd>
+          </dl>
 
-        <p>
-          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <a href="https://twitter.com/aokcub_cg?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @aokcub_cg</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </p>
+          <p>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="https://twitter.com/aokcub_cg?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @aokcub_cg</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </p>
+        </div>
       </section>
       </main>
 
