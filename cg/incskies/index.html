@@ -17,15 +17,15 @@
     <meta name="description" content="高解像度・HDRiフォトリアル系スカイドームテクスチャ。++skies;">
     <title>++skies; - Photo-Realistic Panoramic Sky Textures</title>
     <link rel="stylesheet" type="text/css" href="../css/modern.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400&display=swap" media="print" onload="this.media='all'">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400&amp;display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" media="print" onload="this.media='all'">
   </head>
   <!--[if lt IE 9]><script type="text/javascript" src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>a<![endif]-->
 
-  <body>
+  <body id="top">
     <div class="header__wrapper">
       <header>
-        <a class="nav__link" href="#">++skies;</a>
+        <a class="nav__link" href="#top">++skies;</a>
       </header>
     </div>
 
@@ -39,21 +39,22 @@
     </div>
 
     <div id="content-wrapper" class="content-wrapper">
-      <div class="menu">
+      <nav class="menu" aria-label="ページ内ナビゲーション">
         <ul>
-          <li><a href="#incskies">++skies;</a></li> |
-          <li><a href="#features">++skies;の特徴</a></li> |
-          <li><a href="#download">ダウンロード</a></li> |
+          <li><a href="#incskies">++skies;</a></li>
+          <li><a href="#features">++skies;の特徴</a></li>
+          <li><a href="#download">ダウンロード</a></li>
           <li><a href="#contact">連絡先</a></li>
         </ul>
-      </div>
+      </nav>
 
-      <section class="content-wrapper__item">
-        <div class="alert alert-success">2024/06/02&nbsp;++skies; 050をリリースしました。</div>
-        <div class="alert alert-success">2025/02/17&nbsp;ユーザーズガイド Rev.Kを発行しました。</div>
-      </section>
+      <main>
+        <aside class="content-wrapper__item" aria-label="お知らせ">
+          <div class="alert alert-success">2024/06/02&nbsp;++skies; 050をリリースしました。</div>
+          <div class="alert alert-success">2025/02/17&nbsp;ユーザーズガイド Rev.Kを発行しました。</div>
+        </aside>
 
-      <section  id="incskies" class="content-wrapper__item">
+      <section id="incskies" class="content-wrapper__item">
         <h1>++skies; (Incremented Skies)</h1>
 
         <p>
@@ -69,17 +70,17 @@
 
         <h2>++skies; PV</h2>
         <p>
-          <a href="http://www.nicovideo.jp/watch/sm27686199">++skies; - Incremented Skies【スカイドーム素材】</a>（ニコニコ動画）
+          <a href="https://www.nicovideo.jp/watch/sm27686199">++skies; - Incremented Skies【スカイドーム素材】</a>（ニコニコ動画）
         </p>
       </section>
 
-      <section class="content-wrapper__item">
-        <h1 id="features">++skies;の特徴</h1>
+      <section id="features" class="content-wrapper__item">
+        <h2 class="section-title">++skies;の特徴</h2>
 
         <div class="features-grid">
 
           <div>
-            <h2>最大32k16k (32768px x 16384px)の高解像度</h2>
+            <h3>最大32k16k (32768px x 16384px)の高解像度</h3>
             <figure class="text-centered">
               <img loading="lazy" src="./img/features/32k16k.jpg" alt="32k16k">
             </figure>
@@ -90,7 +91,7 @@
           </div>
 
           <div>
-            <h2>HDRフォーマットサポート</h2>
+            <h3>HDRフォーマットサポート</h3>
             <figure class="text-centered">
               <img loading="lazy" src="./img/features/hdri.jpg" alt="hdri">
             </figure>
@@ -103,9 +104,9 @@
       </section>
 
       <section id="download" class="content-wrapper__item">
-        <h1>ダウンロード</h1>
+        <h2 class="section-title">ダウンロード</h2>
 
-        <h2>パッケージ</h2>
+        <h3>パッケージ</h3>
         <p>
           ++skies;は，用途に合わせて選択していただけるいくつかのパッケージを用意しています。<br>
           各パッケージ末尾の数字によって，同梱されるテクスチャの解像度が異なります。<br>
@@ -126,7 +127,7 @@
           <em><a href="https://github.com/ray-cast/ray-mmd">ray-mmdプラグイン</a>と組み合わせて使用される場合は，HDRxxパッケージを使うことを推奨します。MMDパッケージではHDRiのメリットが得られません。</em>
         </p>
 
-        <h2 id="user-guide">利用条件・ユーザーズガイド</h2>
+        <h3 id="user-guide">利用条件・ユーザーズガイド</h3>
         <p>
           ++skies;の利用条件は下記に記載しています。ご利用になる際には必ず一読ください。<br>
           利用条件は適宜アップデートされます。<br>
@@ -137,14 +138,14 @@
           また，++skies;に関する説明を記載したガイドを各パッケージに同梱しています。<br>
           なお，ユーザーズガイドは適宜アップデートされます。
         </p>
-        <h3>最新バージョン</h3>
+        <h4>最新バージョン</h4>
         <p>
           最新版（Rev. <span style="color:#ff2222;">K</span>）はこちらです。<br>
           <a href="./docs/user-guide.pdf">++skies; User's Guide</a>
           (2025-02-17)
         </p>
 
-        <h2>素材リスト</h2>
+        <h3>素材リスト</h3>
 
         <div class="img-list-grid">
           <div>
@@ -1007,7 +1008,7 @@
       </section>
 
       <section id="contact" class="content-wrapper__item">
-        <h1>連絡先</h1>
+        <h2 class="section-title">連絡先</h2>
 
         <p>
           aokcub<br>
@@ -1021,6 +1022,7 @@
           <a href="https://twitter.com/aokcub_cg?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @aokcub_cg</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </p>
       </section>
+      </main>
 
       <footer class="text-centered" style="padding-bottom: 1.5em">
         <a href="../../privacy.html">aokcub::Webプライバシーポリシー</a><br>
@@ -1028,7 +1030,7 @@
       </footer>
     </div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <script>
     window.addEventListener("load", function(){
     window.cookieconsent.initialise({
