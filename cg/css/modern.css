@@ -2,16 +2,21 @@
   Shared modern layout for aokcub CG pages
 */
 :root {
-  --site-bg: #eef2f4;
+  --site-bg: #edf3f6;
+  --site-bg-wash: #f8fbfc;
   --site-surface: #ffffff;
-  --site-surface-soft: #f7fafb;
-  --site-text: #223039;
-  --site-muted: #62717c;
-  --site-line: #d8e2e7;
-  --site-accent: #007ab7;
-  --site-accent-strong: #005f90;
-  --site-sky-accent: #0b8f86;
-  --site-sky-accent-strong: #076c66;
+  --site-surface-soft: #f4f8fa;
+  --site-text: #25323a;
+  --site-muted: #65747d;
+  --site-line: #d5e2e8;
+  --site-accent: #0b7fa3;
+  --site-accent-strong: #075f7d;
+  --site-accent-soft: #e6f4f7;
+  --site-sky-accent: var(--site-accent);
+  --site-sky-accent-strong: var(--site-accent-strong);
+  --site-warm: #c78252;
+  --site-warm-soft: #fff3ea;
+  --site-dark: #071217;
   --site-shadow: 0 14px 36px rgba(22, 38, 48, 0.07);
   --site-content: 1180px;
   --site-radius: 8px;
@@ -121,8 +126,8 @@ body {
   font-family: "Open Sans", Georgia, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 16rem;
   background:
-    radial-gradient(circle at 20% 0%, rgba(66, 170, 199, 0.14), transparent 28rem),
-    linear-gradient(180deg, #f9fbfc 0%, var(--site-bg) 42rem);
+    radial-gradient(circle at 20% 0%, color-mix(in srgb, var(--site-accent) 14%, transparent), transparent 28rem),
+    linear-gradient(180deg, var(--site-bg-wash) 0%, var(--site-bg) 42rem);
 }
 
 .simple-page {
@@ -245,7 +250,7 @@ footer {
 .wrapper > header {
   position: relative;
   overflow: hidden;
-  background: #111820;
+  background: var(--site-dark);
 }
 
 .wrapper > header::after {
@@ -364,7 +369,7 @@ footer {
   width: 100%;
   padding: 12px max(20px, calc((100% - var(--site-content)) / 2));
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(9, 15, 18, 0.86);
+  background: color-mix(in srgb, var(--site-dark) 86%, transparent);
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   z-index: 10;
@@ -372,7 +377,7 @@ footer {
 
 .nav__link:link,
 .nav__link:visited {
-  color: #fff;
+  color: var(--site-surface);
   font-size: 18rem;
   letter-spacing: 0;
 }
@@ -380,9 +385,9 @@ footer {
 .splash__wrapper {
   position: relative;
   height: clamp(430px, 72vh, 760px);
-  background-color: #071014;
+  background-color: var(--site-dark);
   background-image:
-    linear-gradient(180deg, rgba(7, 16, 20, 0.1) 0%, rgba(7, 16, 20, 0.28) 48%, rgba(7, 16, 20, 0.72) 100%),
+    linear-gradient(180deg, color-mix(in srgb, var(--site-dark) 10%, transparent) 0%, color-mix(in srgb, var(--site-dark) 28%, transparent) 48%, color-mix(in srgb, var(--site-dark) 72%, transparent) 100%),
     url(../incskies/img/top-image2.jpg);
   background-position: center top;
   background-size: cover;
@@ -412,7 +417,7 @@ footer {
 
 .splash__subtitle {
   margin: 0 auto;
-  color: #f5fbfc;
+  color: var(--site-bg-wash);
   font-size: clamp(17rem, 2.2vw, 25rem);
   letter-spacing: 0;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.52);
@@ -426,7 +431,7 @@ footer {
   padding: 24px max(20px, calc((100% - var(--site-content)) / 2)) 48px;
   border-top: 0;
   background:
-    radial-gradient(circle at 82% 0%, rgba(11, 143, 134, 0.14), transparent 26rem),
+    radial-gradient(circle at 82% 0%, color-mix(in srgb, var(--site-accent) 14%, transparent), transparent 26rem),
     var(--site-bg);
 }
 
@@ -500,10 +505,10 @@ footer {
 .alert {
   margin-bottom: 10px;
   padding: 12px 16px;
-  border: 1px solid rgba(11, 143, 134, 0.24);
+  border: 1px solid color-mix(in srgb, var(--site-accent) 24%, transparent);
   border-radius: var(--site-radius);
-  background: #eefbf8;
-  color: #24534e;
+  background: var(--site-accent-soft);
+  color: var(--site-accent-strong);
 }
 
 .features-grid,
