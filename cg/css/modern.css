@@ -318,6 +318,11 @@ footer {
   object-fit: cover;
 }
 
+#works > h2 + p img.incskies-banner {
+  aspect-ratio: 10 / 1;
+  object-fit: contain;
+}
+
 .m-grid {
   column-count: 3;
   column-gap: 18px;
