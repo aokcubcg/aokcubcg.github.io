@@ -324,6 +324,9 @@ footer {
 }
 
 .m-grid div {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
   margin: 0 0 18px;
   padding: 14px;
   border: 1px solid var(--site-line);
