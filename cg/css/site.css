@@ -476,6 +476,12 @@ footer {
   scroll-margin-top: 150px;
 }
 
+@media (min-width: 769px) {
+  body#top .content-wrapper__item > .section-title {
+    font-size: clamp(23rem, 2.6vw, 35rem);
+  }
+}
+
 .menu {
   position: sticky;
   top: 52px;
@@ -591,7 +597,15 @@ footer {
 }
 
 .features-grid > div {
-  padding: 18px;
+  padding: 13.5px 18px 16px;
+}
+
+.features-grid > div > h3:first-child {
+  margin-top: 0;
+}
+
+.features-grid > div > :last-child {
+  margin-bottom: 0;
 }
 
 .img-list-grid > div {
@@ -1182,18 +1196,6 @@ details.news-archive[open] > summary::after {
   .media-card {
     grid-template-columns: 1fr;
   }
-}
-
-/*
-  cg/incskies/index.html — features feature number label
-*/
-.feature-num {
-  display: inline-block;
-  margin-bottom: 6px;
-  color: var(--site-accent);
-  font-size: 12rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
 }
 
 /*
